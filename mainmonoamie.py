@@ -2,10 +2,13 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
-    
+def home():
     return render_template('home.html')
 
+if __name__ == '__main__':
+    app.run(debug=True)
+    
+    
 @app.route('/user/<username>')
 def show_user_profile(username):
     # show the user profile for that user
