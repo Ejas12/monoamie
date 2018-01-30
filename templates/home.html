@@ -1,7 +1,27 @@
-<!DOCTYPE html>
 <html>
-<body>
-<h1>Bienvenido a MonoAmie</h1>
-<p>Seleccione el reporte.</p>
-</body>
-</html>
+        <head>
+            {% if title %}
+            <title>{{ title }} - Monoamie</title>
+            {% else %}
+            <title>microblog</title>
+            {% endif %}
+        </head>
+        <body>
+            <div>
+                Monoamie:
+                <a href="/">Home</a>
+                <a href="/login">Login</a>
+            </div>
+            <hr>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <ul>
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% endwith %}
+            {% block content %}{% endblock %}
+        </body>
+    </html>
