@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 from config import Config
-from mainmonoamie.forms import LoginForm
+from forms import Loginform
 app = Flask(__name__)
 
 @app.route('/')
