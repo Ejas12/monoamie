@@ -1,6 +1,5 @@
 from flask import Flask, render_template
 from config import Config
-from mainmonoamie import app
 from mainmonoamie.forms import LoginForm
 app = Flask(__name__)
 
