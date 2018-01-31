@@ -31,8 +31,9 @@ def login():
 
 @app.route('/testreport')
 def testreport():
+
     connectionobj = MySQLdb.connect(host='172.31.25.244', user='root', passwd='Anonos123', db='liftinghands')
     DBcursor = connectionobj.cursor()
     DBcursor.execute("SELECT * FROM liftinghands.students;")
     listaninos = DBcursor.fetchall()
-    return str(listaninos)
+    return render_template('table.html', title='Reporte Test', data=listaninos)
