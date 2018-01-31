@@ -51,4 +51,39 @@ where liftinghands.schedule.course_id is not  null and  liftinghands.students.fi
 group by liftinghands.students.student_id
 order by liftinghands.students.student_id;""")
     listaninos = DBcursor.fetchall()
-    return render_template('table.html', title='Reporte Test', data=listaninos)
+    return render_template('tablematriculados.html', title='Reporte Test', data=listaninos)
+
+
+
+@app.route('/listasdeclases')
+def listasdeclases():
+
+    connectionobj = MySQLdb.connect(host='172.31.25.244', user='root', passwd='Anonos123', db='liftinghands', charset='utf8', use_unicode=True)
+    DBcursor = connectionobj.cursor()
+    DBcursor.execute("""
+SELECT 
+profes.first_name as 'Nombre del profe',
+profes.last_name as 'Apellido del profe',
+coursedetails.course_title as 'Curso',
+student.first_name as 'Nombre',
+Student.last_name as 'Apellido',
+student.CUSTOM_10 as 'Segundo Apellido',
+student.phone as 'Telefono directo',
+student.CUSTOM_11 as 'Encargado 1',
+student.CUSTOM_12 as 'Telefono Encargado 1',
+student.CUSTOM_13 as 'Encargado 2',
+student.CUSTOM_14 as 'Telefono Encargado 2',
+student.CUSTOM_15 as 'Direccion',
+coursedetails.cp_title as 'horario'
+
+
+FROM liftinghands.students  student
+
+left outer JOIN liftinghands.schedule schedule ON student.student_id=schedule.student_id
+left outer join liftinghands.course_details coursedetails on schedule.course_id=coursedetails.course_id
+left outer join liftinghands.staff profes on coursedetails.teacher_id=profes.staff_id
+where schedule.course_id is not  null and  student.first_name !='Deleted'
+
+order by coursedetails.course_id;""")
+    listaninos = DBcursor.fetchall()
+    return render_template('tablelistadeclase.html', title='Listas de Clase', data=listaninos)

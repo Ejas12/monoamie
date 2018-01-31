@@ -1,0 +1,42 @@
+{% extends "main.html" %}
+
+
+{% block content %}
+
+<div class="container" style="position: absolute; margin-top:100px" >
+         
+    <table class="table table-responsive table-hover">
+      <thead class="thead-dark">
+        <tr>
+            <th>Nombre del profe</th>
+            <th>Apellido del profe</th>
+            <th>Curso</th>
+            <th>Nombre Alumno</th>
+            <th>Apellido Alumno</th>
+            <th>Telefono Directo</th>
+            <th >Encargado 1</th>
+            <th >Telefono Encargado 1</th>
+            <th >Encargado 2</th>
+            <th >Telefono Encargado 2</th>
+            <th >Direccion</th>
+            <th >Horario</th>
+            
+
+
+    </tr>
+    </thead>
+    <tbody>
+
+        {% for row in data %}
+            <tr>
+            {% for d in row %}
+               <td style ="word-break:break-all;">{{ d }}</td>
+            {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+
+    </div>
+    
+{% endblock %}
