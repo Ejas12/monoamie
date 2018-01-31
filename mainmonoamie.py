@@ -5,7 +5,7 @@ from flask_mysqldb import MySQLdb
 
 
 app = Flask(__name__)
-
+app.config.from_object(Config)
 
 @app.route('/')
 def home():
@@ -29,8 +29,8 @@ def login():
     return render_template('Loginform.html', title='Sign In', form=form)
 
 
-@app.route('/testreport')
-def testreport():
+@app.route('/NinosMatriculados')
+def reporteNinosMatriculados():
 
     connectionobj = MySQLdb.connect(host='172.31.25.244', user='root', passwd='Anonos123', db='liftinghands', charset='utf8', use_unicode=True)
     DBcursor = connectionobj.cursor()
