@@ -3,9 +3,9 @@ from config import Config
 from forms import Loginform
 from flask_mysqldb import MySQL
 
+mysql = MySQL()
 app = Flask(__name__)
-app.config.from_object(Config)
-mysql.init_app(app)
+
 
 # MySQL configurations
 app.config['MYSQL_DATABASE_USER'] = 'root'
