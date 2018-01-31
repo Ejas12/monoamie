@@ -6,7 +6,6 @@ from flask_mysqldb import MySQLdb
 
 app = Flask(__name__)
 
-m
 
 @app.route('/')
 def home():
