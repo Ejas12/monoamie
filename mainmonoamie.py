@@ -1,18 +1,12 @@
 from flask import Flask, render_template, flash, redirect
 from config import Config
 from forms import Loginform
-from flask_mysqldb import MySQL
+from flask_mysqldb import MySQLdb
 
-mysql = MySQL()
+
 app = Flask(__name__)
 
-
-# MySQL configurations
-app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'Anonos123'
-app.config['MYSQL_DATABASE_DB'] = 'liftinghands'
-app.config['MYSQL_DATABASE_HOST'] = '172.31.25.244'
-mysql.init_app(app)
+m
 
 @app.route('/')
 def home():
@@ -38,7 +32,8 @@ def login():
 
 @app.route('/testreport')
 def testreport():
-    connectionobj = mysql.connection.cursor()
-    connectionobj.execute("SELECT * FROM liftinghands.students;")
-    listaninos = connectionobj.fetchall()
+    connectionobj = MySQLdb.connect(host='172.31.25.244', user='root', passwd='Anonos123', db='liftinghands')
+    DBcursor = connectionobj.cursor()
+    queriedlist = DBcursor.execute("SELECT * FROM liftinghands.students;")
+    listaninos = queriedlist.fetchall()
     return str(listaninos)
