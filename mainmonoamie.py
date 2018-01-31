@@ -5,14 +5,8 @@ from flask_mysqldb import MySQL
 
 app = Flask(__name__)
 app.config.from_object(Config)
-mysql = MySQL()
- 
-# MySQL configurations
-app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'Anonos123'
-app.config['MYSQL_DATABASE_DB'] = 'liftinghands'
-app.config['MYSQL_DATABASE_HOST'] = '172.31.25.244'
-mysql.init_app(app)
+mysql.init_app(Config)
+
 
 
 @app.route('/')
