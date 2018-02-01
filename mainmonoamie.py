@@ -50,8 +50,8 @@ order by liftinghands.students.student_id;""")
 
 
 
-@app.route('/listasdeclases')
-def listasdeclases():
+@app.route('/reportelistas')
+def reportelistas():
 
     connectionobj = MySQLdb.connect(host='172.31.25.244', user='root', passwd='Anonos123', db='liftinghands', charset='utf8', use_unicode=True)
     DBcursor = connectionobj.cursor()
