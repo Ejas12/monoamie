@@ -14,7 +14,6 @@ def home():
 if __name__ == '__main__':
     app.run(debug=True)
 
-    return 'Hola %s' % username
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
