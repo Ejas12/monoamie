@@ -73,7 +73,7 @@ FROM liftinghands.students  student
 left outer JOIN liftinghands.schedule schedule ON student.student_id=schedule.student_id
 left outer join liftinghands.course_details coursedetails on schedule.course_id=coursedetails.course_id
 left outer join liftinghands.staff profes on coursedetails.teacher_id=profes.staff_id
-where schedule.course_id is not  null and  student.first_name !='Deleted'
+where profes.last_name is not  null and  student.first_name !='Deleted'
 
 order by coursedetails.course_id;""")
     listaninos = DBcursor.fetchall()
