@@ -62,13 +62,9 @@ profes.last_name as 'Apellido del profe',
 coursedetails.course_title as 'Curso',
 student.first_name as 'Nombre',
 Student.last_name as 'Apellido',
-student.CUSTOM_10 as 'Segundo Apellido',
 student.phone as 'Telefono directo',
 student.CUSTOM_11 as 'Encargado 1',
 student.CUSTOM_12 as 'Telefono Encargado 1',
-student.CUSTOM_13 as 'Encargado 2',
-student.CUSTOM_14 as 'Telefono Encargado 2',
-student.CUSTOM_15 as 'Direccion',
 coursedetails.cp_title as 'horario'
 
 
