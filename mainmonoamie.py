@@ -81,4 +81,4 @@ where schedule.course_id is not  null and  student.first_name !='Deleted'
 
 order by coursedetails.course_id;""")
     listaninos = DBcursor.fetchall()
-    return render_template('tablelistadeclase.html', title='Listas de Clase', data=listaninos)
+    return render_template('tablelistadeclases.html', title='Listas de Clase', data=listaninos)
