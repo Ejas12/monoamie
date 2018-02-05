@@ -38,8 +38,8 @@ liftinghands.students.CUSTOM_11 as 'Encargado 1',
 liftinghands.students.CUSTOM_12 as 'Telefono Encargado 1',
 liftinghands.students.CUSTOM_13 as 'Encargado 2',
 liftinghands.students.CUSTOM_14 as 'Telefono Encargado 2',
-liftinghands.students.CUSTOM_15 as 'Direccion',
-liftinghands.schedule.course_id
+liftinghands.schedule.course_id,
+
 FROM liftinghands.students
 left  JOIN liftinghands.schedule ON liftinghands.schedule.student_id=liftinghands.students.student_id
 where liftinghands.schedule.course_id is not  null and  liftinghands.students.first_name !='Deleted'
@@ -78,3 +78,29 @@ where profes.last_name is not  null and  student.first_name !='Deleted'
 order by coursedetails.course_id;""")
     listaninos = DBcursor.fetchall()
     return render_template('tablelistadeclases.html', title='Listas de Clase', data=listaninos)
+
+
+
+@app.route('/NOMatriculados')
+def reporteNOatriculados():
+
+    connectionobj = MySQLdb.connect(host='172.31.25.244', user='root', passwd='Anonos123', db='liftinghands', charset='utf8', use_unicode=True)
+    DBcursor = connectionobj.cursor()
+    DBcursor.execute("""
+SELECT liftinghands.students.first_name as 'Nombre',
+liftinghands.students.last_name as 'Apellido',
+liftinghands.students.CUSTOM_10 as 'Segundo Apellido',
+liftinghands.students.phone as 'Telefono directo',
+liftinghands.students.CUSTOM_11 as 'Encargado 1',
+liftinghands.students.CUSTOM_12 as 'Telefono Encargado 1',
+liftinghands.students.CUSTOM_13 as 'Encargado 2',
+liftinghands.students.CUSTOM_14 as 'Telefono Encargado 2',
+liftinghands.schedule.course_id,
+
+FROM liftinghands.students
+left  JOIN liftinghands.schedule ON liftinghands.schedule.student_id=liftinghands.students.student_id
+where liftinghands.schedule.course_id is null and  liftinghands.students.first_name !='Deleted'
+group by liftinghands.students.student_id
+order by liftinghands.students.student_id;""")
+    listaninos = DBcursor.fetchall()
+    return render_template('tablematriculados.html', title='Reporte Test', data=listaninos)
