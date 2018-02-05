@@ -38,7 +38,7 @@ liftinghands.students.CUSTOM_11 as 'Encargado 1',
 liftinghands.students.CUSTOM_12 as 'Telefono Encargado 1',
 liftinghands.students.CUSTOM_13 as 'Encargado 2',
 liftinghands.students.CUSTOM_14 as 'Telefono Encargado 2',
-liftinghands.schedule.course_id,
+liftinghands.schedule.course_id
 
 FROM liftinghands.students
 left  JOIN liftinghands.schedule ON liftinghands.schedule.student_id=liftinghands.students.student_id
@@ -95,7 +95,7 @@ liftinghands.students.CUSTOM_11 as 'Encargado 1',
 liftinghands.students.CUSTOM_12 as 'Telefono Encargado 1',
 liftinghands.students.CUSTOM_13 as 'Encargado 2',
 liftinghands.students.CUSTOM_14 as 'Telefono Encargado 2',
-liftinghands.schedule.course_id,
+liftinghands.schedule.course_id
 
 FROM liftinghands.students
 left  JOIN liftinghands.schedule ON liftinghands.schedule.student_id=liftinghands.students.student_id
