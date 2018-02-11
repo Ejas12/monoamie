@@ -122,7 +122,8 @@ liftinghands.students.CUSTOM_11 as 'Encargado 1',
 liftinghands.students.CUSTOM_12 as 'Telefono Encargado 1',
 liftinghands.students.CUSTOM_13 as 'Encargado 2',
 liftinghands.students.CUSTOM_14 as 'Telefono Encargado 2',
-liftinghands.students.CUSTOM_15 as 'Direccion'
+liftinghands.students.CUSTOM_15 as 'Direccion',
+liftinghands.schedule.course_id as 'courseID'
 
 
 FROM liftinghands.students
