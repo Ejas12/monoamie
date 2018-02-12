@@ -56,6 +56,31 @@ def reportelistas():
     connectionobj = MySQLdb.connect(host='172.31.25.244', user='root', passwd='Anonos123', db='liftinghands', charset='utf8', use_unicode=True)
     DBcursor = connectionobj.cursor()
     DBcursor.execute("""
+SELECT 
+profes.first_name as 'Nombre del profe',
+profes.last_name as 'Apellido del profe',
+coursedetails.course_title as 'Curso',
+student.first_name as 'Nombre',
+Student.last_name as 'Apellido',
+student.CUSTOM_10 as 'Segundo Apellido',
+student.phone as 'Telefono directo',
+student.CUSTOM_11 as 'Encargado 1',
+student.CUSTOM_12 as 'Telefono Encargado 1',
+student.CUSTOM_13 as 'Encargado 2',
+student.CUSTOM_14 as 'Telefono Encargado 2',
+coursedetails.cp_title as 'horario',
+profes.staff_id as 'ProfeId',
+coursedetails.course_id as 'courseID'
+
+
+FROM liftinghands.students  student
+
+left outer JOIN liftinghands.schedule schedule ON student.student_id=schedule.student_id
+left outer join liftinghands.course_details coursedetails on schedule.course_id=coursedetails.course_id
+left outer join liftinghands.staff profes on coursedetails.teacher_id=profes.staff_id
+where profes.staff_id is not  null and  student.first_name !='Deleted'
+
+order by coursedetails.course_id;
     """)
     listaninos = DBcursor.fetchall()
     return render_template('tablelistadeclases.html', title='Listas de Clase', data=listaninos)
@@ -124,7 +149,29 @@ def listaprofes():
 
     connectionobj = MySQLdb.connect(host='172.31.25.244', user='root', passwd='Anonos123', db='liftinghands', charset='utf8', use_unicode=True)
     DBcursor = connectionobj.cursor()
-    DBcursor.execute("""    """)
+    DBcursor.execute(""" 
+select
+profes.first_name as 'profenombre',
+profes.last_name as 'profeapellido',
+profes.staff_id as 'profeid',
+coursedetails.course_title as 'profecurso',
+coursedetails.cp_title,
+horarios.room as 'aula',
+horarios.days as 'profedia',
+horas.start_time as 'profehorariostart',
+horas.end_time as 'profehorariosend',
+coursedetails.course_id as 'courseID'
+
+FROM liftinghands.staff  profes
+
+left outer JOIN liftinghands.course_details coursedetails ON profes.staff_id=coursedetails.teacher_id
+left outer join liftinghands.course_periods horarios on coursedetails.course_id=horarios.course_id 
+left outer join liftinghands.school_periods horas on horarios.period_id=horas.period_id
+where coursedetails.course_id is not null
+group by coursedetails.course_id
+order by coursedetails.course_id;
+
+   """)
     listaninos = DBcursor.fetchall()
     return render_template('tableprofes.html', title='Reporte Test', data=listaninos)
 
