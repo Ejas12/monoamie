@@ -130,5 +130,5 @@ def listaprofes():
 
 
 @app.route('/monkey')
-def home():
+def monkey():
     return render_template('monkey.html')
