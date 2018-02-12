@@ -66,8 +66,6 @@ student.CUSTOM_10 as 'Segundo Apellido',
 student.phone as 'Telefono directo',
 student.CUSTOM_11 as 'Encargado 1',
 student.CUSTOM_12 as 'Telefono Encargado 1',
-student.CUSTOM_13 as 'Encargado 2',
-student.CUSTOM_14 as 'Telefono Encargado 2',
 coursedetails.cp_title as 'horario',
 profes.staff_id as 'ProfeId',
 coursedetails.course_id as 'courseID'
