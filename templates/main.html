@@ -73,6 +73,13 @@
   <!-- Place this tag in your head or just before your close body tag. -->
   <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script>
+    var x = window.location.href;
+    var url = x.split("/");
+    var lastvar = url[url.length - 1]
+    var csvname = lastvar + '.csv'
+    document.getElementById("demo").innerHTML = csvname;
+
+
 function downloadCSV(csv, filename) {
 var csvFile;
 var downloadLink;
@@ -113,7 +120,7 @@ csv.push(row.join(","));
 }
 
 // Download CSV file
-downloadCSV(csv.join("\n"), filename);
+downloadCSV(csv.join("\n"), csvname);
 }
 
 
