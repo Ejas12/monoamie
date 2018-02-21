@@ -188,6 +188,14 @@ order by liftinghands.students.last_name;
 @app.route("/test")
 def test():
     return "<h1 style='color:blue'>Hello There!</h1>"
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    form = Loginform()
+    if form.validate_on_submit():
+        flash('Usuario logueado {},'.format(form.username.data))
+        return redirect('/')
+    return render_template('Loginform.html', title='Sign In', form=form)
+
 
 @app.route('/')
 def home():
@@ -198,12 +206,5 @@ if __name__ == '__main__':
     
 
 
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    form = Loginform()
-    if form.validate_on_submit():
-        flash('Usuario logueado {},'.format(form.username.data))
-        return redirect('/')
-    return render_template('Loginform.html', title='Sign In', form=form)
 
 
