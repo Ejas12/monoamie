@@ -4,8 +4,6 @@ from forms import Loginform
 from flask_mysqldb import MySQLdb
 
 
-app = Flask(__name__)
-app.config.from_object(Config)
 
 @app.route('/')
 def home():
@@ -13,7 +11,7 @@ def home():
 
 if __name__ == '__main__':
     app.run(debug=True)
-    app.run(host='0.0.0.0')
+    
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -207,3 +205,8 @@ order by liftinghands.students.last_name;
 @app.route("/test")
 def test():
     return "<h1 style='color:blue'>Hello There!</h1>"
+
+
+
+app = Flask(__name__)
+app.config.from_object(Config)
