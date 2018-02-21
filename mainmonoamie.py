@@ -46,7 +46,7 @@ where liftinghands.schedule.course_id is not  null and  liftinghands.students.fi
 group by liftinghands.students.student_id
 order by liftinghands.students.student_id;""")
     listaninos = DBcursor.fetchall()
-    return render_template('tablematriculados.html', title='Reporte Test', data=listaninos)
+    return render_template('tablematriculados.html', title='Reporte de ninos matriculados', data=listaninos)
 
 
 
@@ -80,7 +80,7 @@ where profes.staff_id is not  null and  student.first_name !='Deleted'
 order by coursedetails.course_id;
     """)
     listaninos = DBcursor.fetchall()
-    return render_template('tablelistadeclases.html', title='Listas de Clase', data=listaninos)
+    return render_template('tablelistadeclases.html', title='Reporte de alumnos para elaboracion de listas de clase', data=listaninos)
 
 
 
@@ -106,7 +106,7 @@ where liftinghands.schedule.course_id is null and  liftinghands.students.first_n
 group by liftinghands.students.student_id
 order by liftinghands.students.student_id;""")
     listaninos = DBcursor.fetchall()
-    return render_template('tablematriculados.html', title='Reporte Test', data=listaninos)
+    return render_template('tablematriculados.html', title='Reporte No matriculados', data=listaninos)
 
 
 @app.route('/Listaconcumples')
@@ -139,7 +139,7 @@ order by liftinghands.students.student_id;
 """)
 
     listaninos = DBcursor.fetchall()
-    return render_template('tablematriculadosconcumples.html', title='Reporte Test', data=listaninos)
+    return render_template('tablematriculadosconcumples.html', title='Reporte de alumnos matriculados con edades y grados', data=listaninos)
 
 @app.route('/listaprofes')
 def listaprofes():
@@ -171,9 +171,31 @@ order by coursedetails.course_id desc
 
    """)
     listaninos = DBcursor.fetchall()
-    return render_template('tableprofes.html', title='Reporte Test', data=listaninos)
+    return render_template('tableprofes.html', title='Reporte de Profes para elaboracion de listas', data=listaninos)
 
 
 @app.route('/monkey')
 def monkey():
     return render_template('monkey.html')
+
+@app.route('/cantidadcursos')
+
+def cantidadcursos():
+    
+    connectionobj = MySQLdb.connect(host='172.31.25.244', user='root', passwd='Anonos123', db='liftinghands', charset='utf8', use_unicode=True)
+    DBcursor = connectionobj.cursor()
+    DBcursor.execute(""" 
+SELECT liftinghands.students.first_name as 'Nombre',
+liftinghands.students.last_name as 'Apellido',
+#liftinghands.schedule.course_id,
+count(*)
+FROM liftinghands.students
+left  JOIN liftinghands.schedule ON liftinghands.schedule.student_id=liftinghands.students.student_id
+where liftinghands.schedule.course_id is not  null and  liftinghands.students.first_name !='Deleted'
+group by liftinghands.students.student_id
+order by liftinghands.students.last_name;
+
+
+   """)
+    listaninos = DBcursor.fetchall()
+    return render_template('tablecantidadcursos.html', title='Cantidad de cursos matriculados por alumno', data=listaninos)
