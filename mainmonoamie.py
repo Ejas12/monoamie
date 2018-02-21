@@ -3,7 +3,7 @@ from config import Config
 from forms import Loginform
 from flask_mysqldb import MySQLdb
 
-
+app.config.from_object(Config)
 
 @app.route('/')
 def home():
@@ -209,4 +209,5 @@ def test():
 
 
 app = Flask(__name__)
-app.config.from_object(Config)
+    app.run(debug=True)
+
