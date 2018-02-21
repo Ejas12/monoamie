@@ -206,4 +206,3 @@ order by liftinghands.students.last_name;
 @app.route("/test")
 def hello():
     return "<h1 style='color:blue'>Hello There!</h1>"
-
