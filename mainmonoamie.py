@@ -1,4 +1,4 @@
-from flask import Flask, render_template, flash, redirect
+from flask import Flask, render_template, flash, redirect, url_for
 from config import Config
 from forms import Loginform
 from flask_mysqldb import MySQLdb
