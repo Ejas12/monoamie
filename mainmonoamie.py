@@ -24,7 +24,7 @@ def login():
     return render_template('Loginform.html', title='Sign In', form=form)
 
 
-@app.route('/NinosMatriculados')
+@app.route('/NinosMatriculados', methods=['GET', 'POST'])
 def reporteNinosMatriculados():
 
     connectionobj = MySQLdb.connect(host='172.31.25.244', user='root', passwd='Anonos123', db='liftinghands', charset='utf8', use_unicode=True)
@@ -50,7 +50,7 @@ order by liftinghands.students.student_id;""")
 
 
 
-@app.route('/reportelistas')
+@app.route('/reportelistas', methods=['GET', 'POST'])
 def reportelistas():
 
     connectionobj = MySQLdb.connect(host='172.31.25.244', user='root', passwd='Anonos123', db='liftinghands', charset='utf8', use_unicode=True)
@@ -84,7 +84,7 @@ order by coursedetails.course_id;
 
 
 
-@app.route('/NOMatriculados')
+@app.route('/NOMatriculados', methods=['GET', 'POST'])
 def reporteNOatriculados():
 
     connectionobj = MySQLdb.connect(host='172.31.25.244', user='root', passwd='Anonos123', db='liftinghands', charset='utf8', use_unicode=True)
@@ -109,7 +109,7 @@ order by liftinghands.students.student_id;""")
     return render_template('tablematriculados.html', title='Reporte No matriculados', data=listaninos)
 
 
-@app.route('/Listaconcumples')
+@app.route('/Listaconcumples', methods=['GET', 'POST'])
 def Listaconcumples():
 
     connectionobj = MySQLdb.connect(host='172.31.25.244', user='root', passwd='Anonos123', db='liftinghands', charset='utf8', use_unicode=True)
@@ -141,7 +141,7 @@ order by liftinghands.students.student_id;
     listaninos = DBcursor.fetchall()
     return render_template('tablematriculadosconcumples.html', title='Reporte de alumnos matriculados con edades y grados', data=listaninos)
 
-@app.route('/listaprofes')
+@app.route('/listaprofes', methods=['GET', 'POST'])
 def listaprofes():
 
     connectionobj = MySQLdb.connect(host='172.31.25.244', user='root', passwd='Anonos123', db='liftinghands', charset='utf8', use_unicode=True)
@@ -174,11 +174,11 @@ order by coursedetails.course_id desc
     return render_template('tableprofes.html', title='Reporte de Profes para elaboracion de listas', data=listaninos)
 
 
-@app.route('/monkey')
+@app.route('/monkey', methods=['GET', 'POST'])
 def monkey():
     return render_template('monkey.html')
 
-@app.route('/cantidadcursos')
+@app.route('/cantidadcursos', methods=['GET', 'POST'])
 
 def cantidadcursos():
     
