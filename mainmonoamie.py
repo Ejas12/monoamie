@@ -3,6 +3,8 @@ from config import Config
 from forms import Loginform
 from flask_mysqldb import MySQLdb
 
+
+app = Flask(__name__)
 app.config.from_object(Config)
 
 @app.route('/')
@@ -205,9 +207,3 @@ order by liftinghands.students.last_name;
 @app.route("/test")
 def test():
     return "<h1 style='color:blue'>Hello There!</h1>"
-
-
-
-app = Flask(__name__)
-    app.run(debug=True)
-
