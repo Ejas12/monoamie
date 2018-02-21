@@ -199,3 +199,11 @@ order by liftinghands.students.last_name;
    """)
     listaninos = DBcursor.fetchall()
     return render_template('tablecantidadcursos.html', title='Cantidad de cursos matriculados por alumno', data=listaninos)
+
+
+
+
+@application.route("/test")
+def hello():
+    return "<h1 style='color:blue'>Hello There!</h1>"
+
