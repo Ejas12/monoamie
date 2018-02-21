@@ -6,24 +6,6 @@ from flask_mysqldb import MySQLdb
 app = Flask(__name__)
 app.config.from_object(Config)
 
-@app.route('/')
-def home():
-    return render_template('home.html')
-
-if __name__ == '__main__':
-    app.run(debug=True)
-    
-
-
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    form = Loginform()
-    if form.validate_on_submit():
-        flash('Usuario logueado {},'.format(form.username.data))
-        return redirect('/')
-    return render_template('Loginform.html', title='Sign In', form=form)
-
-
 @app.route('/NinosMatriculados', methods=['GET', 'POST'])
 def reporteNinosMatriculados():
 
@@ -206,3 +188,22 @@ order by liftinghands.students.last_name;
 @app.route("/test")
 def test():
     return "<h1 style='color:blue'>Hello There!</h1>"
+
+@app.route('/')
+def home():
+    return render_template('home.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+    
+
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    form = Loginform()
+    if form.validate_on_submit():
+        flash('Usuario logueado {},'.format(form.username.data))
+        return redirect('/')
+    return render_template('Loginform.html', title='Sign In', form=form)
+
+
