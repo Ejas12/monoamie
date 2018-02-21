@@ -2,7 +2,7 @@ from flask import Flask, render_template, flash, redirect, url_for
 from config import Config
 from forms import Loginform
 from flask_mysqldb import MySQLdb
-
+from app import *
 
 app = Flask(__name__)
 app.config.from_object(Config)
