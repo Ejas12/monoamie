@@ -50,6 +50,7 @@ profes.staff_id as 'ProfeId',
 coursedetails.course_id as 'courseID'
 
 
+
 FROM liftinghands.students  student
 
 left outer JOIN liftinghands.schedule schedule ON student.student_id=schedule.student_id
@@ -132,7 +133,8 @@ horarios.days as 'profedia',
 horas.start_time as 'profehorariostart',
 horas.end_time as 'profehorariosend',
 coursedetails.course_id as 'courseID'
-
+profes.email as 'profeemail',
+profes.phone as 'profephone'
 FROM liftinghands.staff  profes
 
 left outer JOIN liftinghands.course_details coursedetails ON profes.staff_id=coursedetails.teacher_id
