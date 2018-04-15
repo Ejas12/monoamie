@@ -132,7 +132,7 @@ horarios.room as 'aula',
 horarios.days as 'profedia',
 horas.start_time as 'profehorariostart',
 horas.end_time as 'profehorariosend',
-coursedetails.course_id as 'courseID'
+coursedetails.course_id as 'courseID',
 profes.email as 'profeemail',
 profes.phone as 'profephone'
 FROM liftinghands.staff  profes
