@@ -140,8 +140,9 @@ FROM liftinghands.staff  profes
 left outer JOIN liftinghands.course_details coursedetails ON profes.staff_id=coursedetails.teacher_id
 left outer join liftinghands.course_periods horarios on coursedetails.course_id=horarios.course_id 
 left outer join liftinghands.school_periods horas on horarios.period_id=horas.period_id
-where coursedetails.course_id is not null and coursedetails.marking_period_id != '1'
-order by coursedetails.course_id desc
+where coursedetails.course_id is not null and coursedetails.syear='2018' and coursedetails.mp=horarios.mp
+group by coursedetails.course_id
+order by coursedetails.course_id desc;
 
 
    """)
