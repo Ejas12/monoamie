@@ -120,31 +120,24 @@ def listaprofes():
 
     connectionobj = MySQLdb.connect(host='172.26.6.27', user='root', passwd='289av9SeNTbW', db='liftinghands', charset='utf8', use_unicode=True)
     DBcursor = connectionobj.cursor()
-    DBcursor.execute(""" 
-select 
-
-profes.first_name as 'profenombre',
-profes.last_name as 'profeapellido',
-profes.staff_id as 'profeid',
-coursedetails.course_title as 'profecurso',
-coursedetails.cp_title,
-horarios.room as 'aula',
-horarios.days as 'profedia',
-horas.start_time as 'profehorariostart',
-horas.end_time as 'profehorariosend',
-coursedetails.course_id as 'courseID',
-profes.email as 'profeemail',
-profes.phone as 'profephone'
-FROM liftinghands.staff  profes
-
-left outer JOIN liftinghands.course_details coursedetails ON profes.staff_id=coursedetails.teacher_id
-left outer join liftinghands.course_periods horarios on coursedetails.course_id=horarios.course_id 
-left outer join liftinghands.school_periods horas on horarios.period_id=horas.period_id
-where coursedetails.course_id is not null and coursedetails.syear='2018' and coursedetails.mp=horarios.mp
-group by coursedetails.course_id
-order by coursedetails.course_id desc;
-
-
+    DBcursor.execute("""
+    select profes.first_name,
+    profes.last_name,
+    profes.staff_id,
+    profes.email,
+    profes.phone,
+    horarios.short_name,
+    horarios.days,
+    horas.start_time,
+    horas.end_time,
+    detallescurso.course_period_id
+    FROM liftinghands.course_details detallescurso
+    inner join liftinghands.school_periods horas on detallescurso.period_id = horas.period_id
+    join liftinghands.course_periods horarios on detallescurso.course_id = horarios.course_id
+    join liftinghands.staff profes on detallescurso.teacher_id = profes.staff_id
+    where detallescurso.cp_title like '%q1%' and horarios.marking_period_id is not null
+    group by detallescurso.course_period_id
+    order by horarios.short_name;
    """)
     listaninos = DBcursor.fetchall()
     return render_template('tableprofes.html', title='Reporte de Profes para elaboracion de listas', data=listaninos)
