@@ -36,29 +36,13 @@ def reportelistas():
     connectionobj = MySQLdb.connect(host='172.26.6.27', user='root', passwd='289av9SeNTbW', db='liftinghands', charset='utf8', use_unicode=True)
     DBcursor = connectionobj.cursor()
     DBcursor.execute("""
-SELECT 
-profes.first_name as 'Nombre del profe',
-profes.last_name as 'Apellido del profe',
-coursedetails.course_title as 'Curso',
-student.first_name as 'Nombre',
-Student.last_name as 'Apellido',
-student.CUSTOM_10 as 'Segundo Apellido',
-student.phone as 'Telefono directo',
-student.CUSTOM_11 as 'Encargado 1',
-student.CUSTOM_12 as 'Telefono Encargado 1',
-profes.staff_id as 'ProfeId',
-coursedetails.course_id as 'courseID'
-
-
-
-FROM liftinghands.students  student
-
-left outer JOIN liftinghands.schedule schedule ON student.student_id=schedule.student_id
-left outer join liftinghands.course_details coursedetails on schedule.course_id=coursedetails.course_id
-left outer join liftinghands.staff profes on coursedetails.teacher_id=profes.staff_id
-where profes.staff_id is not  null and  student.first_name !='Deleted'
-
-order by coursedetails.course_id;
+    SELECT 
+    student.first_name,
+    student.last_name,
+    student.phone,
+    schedule.course_period_id
+    FROM liftinghands.students  student
+    join liftinghands.schedule schedule on student.student_id = schedule.student_id;
     """)
     listaninos = DBcursor.fetchall()
     return render_template('tablelistadeclases.html', title='Reporte de alumnos para elaboracion de listas de clase', data=listaninos)
