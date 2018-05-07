@@ -58,9 +58,8 @@ def reporteNOatriculados():
 SELECT liftinghands.students.first_name as 'Nombre',
 liftinghands.students.last_name as 'Apellido',
 liftinghands.students.CUSTOM_10 as 'Segundo Apellido',
-liftinghands.students.phone as 'Telefono directo',
 liftinghands.students.CUSTOM_11 as 'Encargado 1',
-liftinghands.students.CUSTOM_12 as 'Telefono Encargado 1',
+liftinghands.students.phone as 'Telefono directo',
 liftinghands.schedule.course_id
 
 FROM liftinghands.students
@@ -82,6 +81,7 @@ SELECT liftinghands.students.first_name as 'Nombre',
 liftinghands.students.last_name as 'Apellido',
 liftinghands.students.birthdate as 'cumpleanos',
 liftinghands.students.CUSTOM_11 as 'Encargado 1',
+liftinghands.students.phone as 'Telefono directo',
 liftinghands.students.CUSTOM_12 as 'Telefono Encargado 1',
 liftinghands.enroll_grade.title as 'Grado',
 liftinghands.schedule.course_id as 'courseID'
