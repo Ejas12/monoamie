@@ -1,28 +1,11 @@
 {% extends "main.html" %}
+
+
 {% block content %}
-<link href="http://netdna.bootstrapcdn.com/<a href="https://www.jqueryscript.net/tags.php?/twitter/">twitter</a>-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-
-<link href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" rel="stylesheet">
-
-<link href="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.4/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet">
-
-<link href="lib/bootstrap-filterable.css" rel="stylesheet" type="text/css">
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
-<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-
-<script src="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.4/bootstrap-editable/js/bootstrap-editable.min.js"></script>
-
-<script src="src/jquery.filterable.js"></script>
-<script>
-
-
-
-
-<table class="table table-responsive table-hover" style="position: relative; margin-top:100px" id='demo'>
-	<thead>
-		<tr>
+      
+<table class="table table-responsive table-hover" style="position: relative; margin-top:100px" id='tableprofe'>
+    <thead  style='background-color:#343a40; color:white'>
+        <tr>
             <th>profenombre</th>
             <th>profeapellido</th>
             <th>profeid</th>
@@ -32,21 +15,28 @@
             <th>profedia</th>
             <th>profehorariostart</th>
             <th>profehorariosend</th>
-            <th>courseID</th>     
-	</thead>
-	<tbody>
-	{% for row in data %}
+            <th>courseID</th>          
+
+
+    </tr>
+    </thead>
+    <tbody>
+
+        {% for row in data %}
             <tr>
             {% for d in row %}
                <td style ="word-break:break-all;">{{ d }}</td>
             {% endfor %}
             </tr>
         {% endfor %}
-	</tbody>
-</table>
-</div>
-
-$('#demo').filterable({
+    </tbody>
+    </table>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.4/bootstrap-editable/js/bootstrap-editable.min.js"></script>
+<script src="src/jquery.filterable.js"></script>
+<script>
+$('#tableprofe').filterable({
 prependWild: true, // If a wild card should be added to the start of all filter input
 appendWild: true, // If a wild card should be added to the end of all filter input
 ignoreCase: true, // If case should be ignored
@@ -54,5 +44,6 @@ ignoreColumns: [], // Array. Column indexes to not make filterable
 onlyColumns: null, // Array. Column indexes to make filterable, all other columns are left non-filterable.
 });
 </script>
+
 
 {% endblock %}
