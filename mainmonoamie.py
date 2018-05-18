@@ -120,7 +120,7 @@ def listaprofes():
     join liftinghands.course_periods horarios on detallescurso.course_id = horarios.course_id
     join liftinghands.staff profes on detallescurso.teacher_id = profes.staff_id
     where horarios.title like '%q1%' and horarios.marking_period_id is not null
-    group by detallescurso.course_period_id
+    group by detallescurso.course_id
     order by horarios.short_name;
    """)
     listaninos = DBcursor.fetchall()
