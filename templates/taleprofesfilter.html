@@ -38,7 +38,7 @@
 	{% for row in data %}
             <tr>
             {% for d in row %}
-               <td style ="word-break:break-all;" class="bs-checkbox"><input data-index=loop.index name="btSelectItem" type="checkbox">{{ d }}</td>
+               <td style ="word-break:break-all;">{{ d }}</td>
             {% endfor %}
             </tr>
         {% endfor %}
