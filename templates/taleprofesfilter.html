@@ -2,7 +2,12 @@
 
 
 {% block content %}
-      
+<script>
+$(document).ready(function() {
+    $('#tableprofe').DataTable();
+} );
+</script>
+   
 <table class="table table-responsive table-hover" style="position: relative; margin-top:100px" id='tableprofe'>
     <thead  style='background-color:#343a40; color:white'>
         <tr>
@@ -31,18 +36,10 @@
         {% endfor %}
     </tbody>
     </table>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.4/bootstrap-editable/js/bootstrap-editable.min.js"></script>
-<script src="src/jquery.filterable.js"></script>
 <script>
-$('#tableprofe').filterable({
-prependWild: true, // If a wild card should be added to the start of all filter input
-appendWild: true, // If a wild card should be added to the end of all filter input
-ignoreCase: true, // If case should be ignored
-ignoreColumns: [], // Array. Column indexes to not make filterable
-onlyColumns: null, // Array. Column indexes to make filterable, all other columns are left non-filterable.
-});
+$(document).ready(function() {
+    $('#tableprofe').DataTable();
+} );
 </script>
 
 
