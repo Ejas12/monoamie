@@ -1,49 +1,38 @@
 {% extends "main.html" %}
 {% block content %}
+<link href="http://netdna.bootstrapcdn.com/<a href="https://www.jqueryscript.net/tags.php?/twitter/">twitter</a>-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 
-<style>
-.container {
-	width: 1024px;
-	padding: 2em;
-}
+<link href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" rel="stylesheet">
 
-.bold-blue {
-	font-weight: bold;
-	color: #0277BD;
-}
-</style>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.4/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet">
+
+<link href="lib/bootstrap-filterable.css" rel="stylesheet" type="text/css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.4/bootstrap-editable/js/bootstrap-editable.min.js"></script>
+
+<script src="src/jquery.filterable.js"></script>
+<script>
 
 
-<div id="toolbar" style='position: relative; margin-top:100px'>
-		<select class="form-control">
-				<option value="">Export Basic</option>
-				<option value="all">Export All</option>
-				<option value="selected">Export Selected</option>
-		</select>
-</div>
 
-<table id="table"
-			 data-toggle="table"
-			 data-search="true"
-			 data-filter-control="true" 
-			 data-show-export="true"
-			 data-click-to-select="true"
-			 data-toolbar="#toolbar"
-			 style='position: relative; margin-top:200px'>
+
+<table class="table table-responsive table-hover" style="position: relative; margin-top:100px" id='demo'>
 	<thead>
 		<tr>
-			<th data-field="state" data-checkbox="true"></th>
-			<th data-field="profenombre" data-filter-control="input" data-sortable="true" style ="word-break:break-all;">profenombre</th>
-			<th data-field="profeapellido" data-filter-control="input" data-sortable="true" style ="word-break:break-all;">profeapellido</th>
-			<th data-field="profeid" data-filter-control="input" data-sortable="true" style ="word-break:break-all;">profeid</th>
-			<th data-field="profeemail" data-filter-control="input" data-sortable="true" style ="word-break:break-all;">profeemail</th>
-			<th data-field="profephone" data-filter-control="input" data-sortable="true" style ="word-break:break-all;">profephone</th>
-			<th data-field="profecurso" data-filter-control="input" data-sortable="true" style ="word-break:break-all;">profecurso</th>
-			<th data-field="profedia" data-filter-control="input" data-sortable="true" style ="word-break:break-all;">profedia</th>
-			<th data-field="profehorariostart" data-filter-control="input" data-sortable="true" style ="word-break:break-all;">profehorariostart</th>
-			<th data-field="profehorariosend" data-filter-control="select" data-sortable="true" style ="word-break:break-all;">profehorariosend</th>
-			<th data-field="courseID" data-filter-control="select" data-sortable="true" style ="word-break:break-all;">courseID</th>
-		</tr>
+            <th>profenombre</th>
+            <th>profeapellido</th>
+            <th>profeid</th>
+            <th>profeemai</th>
+            <th>profephone</th>
+            <th>profecurso</th>
+            <th>profedia</th>
+            <th>profehorariostart</th>
+            <th>profehorariosend</th>
+            <th>courseID</th>     
 	</thead>
 	<tbody>
 	{% for row in data %}
@@ -57,24 +46,13 @@
 </table>
 </div>
 
-<script>
-//exporte les données sélectionnées
-var $table = $('#table');
-    $(function () {
-        $('#toolbar').find('select').change(function () {
-            $table.bootstrapTable('refreshOptions', {
-                exportDataType: $(this).val()
-            });
-        });
-    })
-
-		var trBoldBlue = $("table");
-
-	$(trBoldBlue).on("click", "tr", function (){
-			$(this).toggleClass("bold-blue");
-	});
+$('#demo').filterable({
+prependWild: true, // If a wild card should be added to the start of all filter input
+appendWild: true, // If a wild card should be added to the end of all filter input
+ignoreCase: true, // If case should be ignored
+ignoreColumns: [], // Array. Column indexes to not make filterable
+onlyColumns: null, // Array. Column indexes to make filterable, all other columns are left non-filterable.
+});
 </script>
-
-
 
 {% endblock %}
