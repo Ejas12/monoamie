@@ -119,7 +119,7 @@ def listaprofes():
     inner join liftinghands.school_periods horas on detallescurso.period_id = horas.period_id
     join liftinghands.course_periods horarios on detallescurso.course_id = horarios.course_id
     join liftinghands.staff profes on detallescurso.teacher_id = profes.staff_id
-    where horarios.title like '%q1%' and horarios.marking_period_id is not null
+    where horarios.title like '%q1%' and horarios.marking_period_id is not null and horarios.short_name is not null
     group by detallescurso.course_id
     order by horarios.short_name;
    """)
