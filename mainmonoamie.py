@@ -124,7 +124,7 @@ def listaprofes():
     order by horarios.short_name;
    """)
     listaninos = DBcursor.fetchall()
-    return render_template('tableprofes.html', title='Reporte de Profes para elaboracion de listas', data=listaninos)
+    return render_template('taleprofesfilter.html', title='Reporte de Profes para elaboracion de listas', data=listaninos)
 
 
 @app.route('/monkey', methods=['GET', 'POST'])

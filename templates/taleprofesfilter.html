@@ -1,0 +1,67 @@
+{% extends "main.html" %}
+<style>
+.container {
+	width: 1024px;
+	padding: 2em;
+}
+
+.bold-blue {
+	font-weight: bold;
+	color: #0277BD;
+}
+</style>
+
+
+<div id="toolbar">
+		<select class="form-control">
+				<option value="">Export Basic</option>
+				<option value="all">Export All</option>
+				<option value="selected">Export Selected</option>
+		</select>
+</div>
+
+<table id="table" 
+			 data-toggle="table"
+			 data-search="true"
+			 data-filter-control="true" 
+			 data-show-export="true"
+			 data-click-to-select="true"
+			 data-toolbar="#toolbar">
+	<thead>
+		<tr>
+			<th data-field="state" data-checkbox="true"></th>
+			<th data-field="profenombre" data-filter-control="input" data-sortable="true">profenombre</th>
+			<th data-field="profeapellido" data-filter-control="input" data-sortable="true">profeapellido</th>
+			<th data-field="profeid" data-filter-control="input" data-sortable="true">profeid</th>
+			<th data-field="profeemail" data-filter-control="input" data-sortable="true">profeemail</th>
+			<th data-field="profephone" data-filter-control="input" data-sortable="true">profephone</th>
+			<th data-field="profecurso" data-filter-control="input" data-sortable="true">profecurso</th>
+			<th data-field="profedia" data-filter-control="input" data-sortable="true">profedia</th>
+			<th data-field="profehorariostart" data-filter-control="input" data-sortable="true">profehorariostart</th>
+			<th data-field="profehorariosend" data-filter-control="select" data-sortable="true">profehorariosend</th>
+			<th data-field="courseID" data-filter-control="select" data-sortable="true">courseID</th>
+		</tr>
+	</thead>
+	<tbody>
+	{% for row in data %}
+            <tr>
+            {% for d in row %}
+               <td style ="word-break:break-all;" class="bs-checkbox "><input data-index=loop.index name="btSelectItem" type="checkbox">{{ d }}</td>
+            {% endfor %}
+            </tr>
+        {% endfor %}
+		<tr>
+			<td class="bs-checkbox "><input data-index="0" name="btSelectItem" type="checkbox"></td>
+			<td>Valérie</td>
+			<td>01/09/2015</td>
+			<td>Français</td>
+			<td>12/20</td>
+		</tr>
+
+	</tbody>
+</table>
+</div>
+
+
+
+{% endblock %}
