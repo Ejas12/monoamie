@@ -2,6 +2,7 @@ from flask import Flask, render_template, flash, redirect, url_for
 from config import Config
 from forms import Loginform
 from flask_mysqldb import MySQLdb
+from flask_table import Table, Col, LinkCol
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -14,11 +15,11 @@ def reporteNinosMatriculados():
     DBcursor.execute("""
 SELECT liftinghands.students.first_name as 'Nombre',
 liftinghands.students.last_name as 'Apellido',
-liftinghands.students.CUSTOM_10 as 'Segundo Apellido',
-liftinghands.students.phone as 'Telefono directo',
-liftinghands.students.CUSTOM_11 as 'Encargado 1',
-liftinghands.students.CUSTOM_12 as 'Telefono Encargado 1',
-liftinghands.schedule.course_id
+liftinghands.students.CUSTOM_10 as 'Segundo_Apellido',
+liftinghands.students.phone as 'Telefono_directo',
+liftinghands.students.CUSTOM_11 as 'Encargado_1',
+liftinghands.students.CUSTOM_12 as 'Telefono_Encargado_1',
+liftinghands.schedule.course_id as 'Course_ID'
 
 FROM liftinghands.students
 left  JOIN liftinghands.schedule ON liftinghands.schedule.student_id=liftinghands.students.student_id
@@ -26,6 +27,16 @@ where liftinghands.schedule.course_id is not  null and  liftinghands.students.fi
 group by liftinghands.students.student_id
 order by liftinghands.students.student_id;""")
     listaninos = DBcursor.fetchall()
+    class ItemTable(Table):
+        Nombre = Col('Nombre')
+        Apellido = Col('Apellido')
+        Segundo_Apellido = ('Segundo_Apellido')
+        Telefono_directo = ('Telefono_directo')
+        Encargado_1 = ('Encargado_1')
+        Telefono_Encargado_1 = ('Telefono_Encargado_1')
+        Course_ID = ('Course_ID')
+
+
     return render_template('tablematriculados.html', title='Reporte de ninos matriculados', data=listaninos)
 
 
@@ -40,9 +51,10 @@ def reportelistas():
     student.first_name,
     student.last_name,
     student.phone,
-    schedule.course_period_id
+    detallescurso.course_period_id
     FROM liftinghands.students  student
-    join liftinghands.schedule schedule on student.student_id = schedule.student_id;
+    join liftinghands.schedule schedule on student.student_id = schedule.student_id
+    join liftinghands.course_details detallescurso on schedule.course_id = detallescurso.course_id;
     """)
     listaninos = DBcursor.fetchall()
     return render_template('tablelistadeclases.html', title='Reporte de alumnos para elaboracion de listas de clase', data=listaninos)
@@ -104,25 +116,25 @@ def listaprofes():
 
     connectionobj = MySQLdb.connect(host='172.26.6.27', user='root', passwd='289av9SeNTbW', db='liftinghands', charset='utf8', use_unicode=True)
     DBcursor = connectionobj.cursor()
-    DBcursor.execute("""
-    select profes.first_name,
+    DBcursor.execute("""select
+    profes.first_name,
     profes.last_name,
-    profes.staff_id,
-    profes.email,
     profes.phone,
-    horarios.short_name,
-    horarios.days,
-    horas.start_time,
-    horas.end_time,
-    detallescurso.course_period_id
-    FROM liftinghands.course_details detallescurso
-    inner join liftinghands.school_periods horas on detallescurso.period_id = horas.period_id
-    join liftinghands.course_periods horarios on detallescurso.course_id = horarios.course_id
-    join liftinghands.staff profes on detallescurso.teacher_id = profes.staff_id
-    where horarios.title like '%q1%' and horarios.marking_period_id is not null and horarios.short_name is not null
-    group by detallescurso.course_id
-    order by horarios.short_name;
-   """)
+    profes.email,
+    profes.staff_id,
+    detallescurso.course_title,
+    detallescurso.cp_title,
+    detallescurso.course_period_id,
+    tabladias.days,
+    periodos.start_time,
+    periodos.end_time
+    from liftinghands.staff profes
+    left outer join liftinghands.course_details detallescurso on (detallescurso.teacher_id = profes.staff_id or detallescurso.secondary_teacher_id = profes.staff_id)
+    join liftinghands.school_periods periodos on periodos.period_id = detallescurso.period_id
+    join liftinghands.course_periods tabladias on tabladias.course_period_id = detallescurso.course_period_id
+    where profes.profile = 'Teacher' and detallescurso.cp_title like '%q1%'
+    order by detallescurso.course_period_id
+    """)
     listaninos = DBcursor.fetchall()
     return render_template('taleprofesfilter.html', title='Reporte de Profes para elaboracion de listas', data=listaninos)
 
