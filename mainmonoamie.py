@@ -35,6 +35,10 @@ order by liftinghands.students.student_id;""")
         Encargado_1 = ('Encargado_1')
         Telefono_Encargado_1 = ('Telefono_Encargado_1')
         Course_ID = ('Course_ID')
+        classes = ['table', 'table-responsive', 'table-hover']
+
+    htmlninosmatriculados = ItemTable(listaninos)
+    return render_template('dynamictable.html', title='Lista Ninos Matriculados', data = htmlninosmatriculados )
 
 
     return render_template('tablematriculados.html', title='Reporte de ninos matriculados', data=listaninos)
