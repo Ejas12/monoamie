@@ -28,13 +28,13 @@ group by liftinghands.students.student_id
 order by liftinghands.students.student_id;""")
     listaninos = DBcursor.fetchall()
     class ItemTable(Table):
-        Nombre = Col('liftinghands.students.first_name')
-        Apellido = Col('liftinghands.students.last_name')
-        Segundo_Apellido = ('liftinghands.students.CUSTOM_10')
-        Telefono_directo = ('liftinghands.students.phone')
-        Encargado_1 = ('liftinghands.students.CUSTOM_11')
-        Telefono_Encargado_1 = ('liftinghands.students.CUSTOM_12')
-        Course_ID = ('liftinghands.schedule.course_id')
+        liftinghands.students.first_name = Col('liftinghands.students.first_name')
+        liftinghands.students.last_name = Col('liftinghands.students.last_name')
+        liftinghands.students.CUSTOM_10 = ('liftinghands.students.CUSTOM_10')
+        liftinghands.students.phone = ('liftinghands.students.phone')
+        liftinghands.students.CUSTOM_11 = ('liftinghands.students.CUSTOM_11')
+        liftinghands.students.CUSTOM_12 = ('liftinghands.students.CUSTOM_12')
+        liftinghands.schedule.course_id = ('liftinghands.schedule.course_id')
         classes = ['table', 'table-responsive', 'table-hover']
 
     htmlninosmatriculados = ItemTable(listaninos)
