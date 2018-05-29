@@ -30,11 +30,11 @@ order by liftinghands.students.student_id;""")
     class ItemTable(Table):
         liftinghands.students.first_name = Col('liftinghands.students.first_name')
         liftinghands.students.last_name = Col('liftinghands.students.last_name')
-        liftinghands.students.CUSTOM_10 = ('liftinghands.students.CUSTOM_10')
-        liftinghands.students.phone = ('liftinghands.students.phone')
-        liftinghands.students.CUSTOM_11 = ('liftinghands.students.CUSTOM_11')
-        liftinghands.students.CUSTOM_12 = ('liftinghands.students.CUSTOM_12')
-        liftinghands.schedule.course_id = ('liftinghands.schedule.course_id')
+        liftinghands.students.CUSTOM_10 = Col('liftinghands.students.CUSTOM_10')
+        liftinghands.students.phone = Col('liftinghands.students.phone')
+        liftinghands.students.CUSTOM_11 = Col('liftinghands.students.CUSTOM_11')
+        liftinghands.students.CUSTOM_12 = Col('liftinghands.students.CUSTOM_12')
+        liftinghands.schedule.course_id = Col('liftinghands.schedule.course_id')
         classes = ['table', 'table-responsive', 'table-hover']
 
     htmlninosmatriculados = ItemTable(listaninos)
