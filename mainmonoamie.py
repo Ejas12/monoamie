@@ -4,13 +4,16 @@ from forms import Loginform
 from flask_mysqldb import MySQLdb
 from flask_table import Table, Col, LinkCol
 
+sqlserverip = '172.31.36.62'
+sqlserveruser = 'liftingmonoami'
+sqlpass = 'LiftingAnonos2018'
 app = Flask(__name__)
 app.config.from_object(Config)
 
 @app.route('/NinosMatriculados', methods=['GET', 'POST'])
 def reporteNinosMatriculados():
 
-    connectionobj = MySQLdb.connect(host='172.26.6.27', user='root', passwd='289av9SeNTbW', db='liftinghands', charset='utf8', use_unicode=True)
+    connectionobj = MySQLdb.connect(host=sqlserverip, user=sqlserveruser, passwd=sqlpass, db='liftinghands', charset='utf8', use_unicode=True)
     DBcursor = connectionobj.cursor()
     DBcursor.execute("""
 SELECT liftinghands.students.first_name as 'Nombre',
@@ -48,7 +51,7 @@ order by liftinghands.students.student_id;""")
 @app.route('/reportelistas', methods=['GET', 'POST'])
 def reportelistas():
 
-    connectionobj = MySQLdb.connect(host='172.26.6.27', user='root', passwd='289av9SeNTbW', db='liftinghands', charset='utf8', use_unicode=True)
+    connectionobj = MySQLdb.connect(host=sqlserverip, user=sqlserveruser, passwd=sqlpass, db='liftinghands', charset='utf8', use_unicode=True)
     DBcursor = connectionobj.cursor()
     DBcursor.execute("""
     SELECT 
@@ -68,7 +71,7 @@ def reportelistas():
 @app.route('/NOMatriculados', methods=['GET', 'POST'])
 def reporteNOatriculados():
 
-    connectionobj = MySQLdb.connect(host='172.26.6.27', user='root', passwd='289av9SeNTbW', db='liftinghands', charset='utf8', use_unicode=True)
+    connectionobj = MySQLdb.connect(host=sqlserverip, user=sqlserveruser, passwd=sqlpass, db='liftinghands', charset='utf8', use_unicode=True)
     DBcursor = connectionobj.cursor()
     DBcursor.execute("""
 SELECT liftinghands.students.first_name as 'Nombre',
@@ -90,7 +93,7 @@ order by liftinghands.students.student_id;""")
 @app.route('/Listaconcumples', methods=['GET', 'POST'])
 def Listaconcumples():
 
-    connectionobj = MySQLdb.connect(host='172.26.6.27', user='root', passwd='289av9SeNTbW', db='liftinghands', charset='utf8', use_unicode=True)
+    connectionobj = MySQLdb.connect(host=sqlserverip, user=sqlserveruser, passwd=sqlpass, db='liftinghands', charset='utf8', use_unicode=True)
     DBcursor = connectionobj.cursor()
     DBcursor.execute("""
 SELECT liftinghands.students.first_name as 'Nombre',
@@ -118,7 +121,7 @@ order by liftinghands.students.student_id;
 @app.route('/listaprofes', methods=['GET', 'POST'])
 def listaprofes():
 
-    connectionobj = MySQLdb.connect(host='172.26.6.27', user='root', passwd='289av9SeNTbW', db='liftinghands', charset='utf8', use_unicode=True)
+    connectionobj = MySQLdb.connect(host=sqlserverip, user=sqlserveruser, passwd=sqlpass, db='liftinghands', charset='utf8', use_unicode=True)
     DBcursor = connectionobj.cursor()
     DBcursor.execute("""select
     profes.first_name,
@@ -151,7 +154,7 @@ def monkey():
 
 def cantidadcursos():
     
-    connectionobj = MySQLdb.connect(host='172.26.6.27', user='root', passwd='289av9SeNTbW', db='liftinghands', charset='utf8', use_unicode=True)
+    connectionobj = MySQLdb.connect(host=sqlserverip, user=sqlserveruser, passwd=sqlpass, db='liftinghands', charset='utf8', use_unicode=True)
     DBcursor = connectionobj.cursor()
     DBcursor.execute(""" 
 SELECT liftinghands.students.first_name as 'Nombre',
