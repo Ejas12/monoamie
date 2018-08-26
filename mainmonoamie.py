@@ -139,7 +139,7 @@ def listaprofes():
     left outer join liftinghands.course_details detallescurso on (detallescurso.teacher_id = profes.staff_id or detallescurso.secondary_teacher_id = profes.staff_id)
     join liftinghands.school_periods periodos on periodos.period_id = detallescurso.period_id
     join liftinghands.course_periods tabladias on tabladias.course_period_id = detallescurso.course_period_id
-    where profes.profile = 'Teacher' and detallescurso.cp_title like '%q1%'
+    where profes.profile = 'Teacher' and detallescurso.cp_title like '%q3%'
     order by detallescurso.course_period_id
     """)
     listaninos = DBcursor.fetchall()
