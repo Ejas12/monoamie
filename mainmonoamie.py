@@ -195,8 +195,34 @@ def asistencia():
 
     connectionobj = MySQLdb.connect(host=sqlattendanceserver, user=sqlserveruser, passwd=sqlpass, db='liftingasistencia', charset='utf8', use_unicode=True)
     DBcursor = connectionobj.cursor()
-    DBcursor.execute("""select * from chicosyhorarios""")
+    DBcursor.execute("""select attendanceid,
+courseid,
+coursename,
+dayoftheweek,
+teachername,
+teacherlastname,
+teacherid,
+studentname,
+studentlastname,
+studentid,
+weekatt1,
+weekatt2,
+weekatt3,
+weekatt4,
+weekatt5,
+weekatt6,
+weekatt7,
+weekatt8,
+weekatt9,
+weekatt10,
+weekatt11,
+weekatt12,
+weekatt13, 
+weekatt14,
+weekatt15
+from chicosyhorarios""")
     listaninos = DBcursor.fetchall()
+    listaninos.a
     class ItemTable(Table):
         attendanceid = Col('attendanceid')
         courseid = Col('courseid')
@@ -225,7 +251,7 @@ def asistencia():
         weekatt15 = Col('weekatt15')
         classes = ['table', 'table-responsive', 'table-hover']
     htmlninosmatriculados = ItemTable(listaninos)
-    
+
     return render_template('dynamictable.html', title='asistencia', data = htmlninosmatriculados )
 
 
