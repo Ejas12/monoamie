@@ -222,7 +222,6 @@ weekatt14,
 weekatt15
 from chicosyhorarios""")
     listaninos = DBcursor.fetchall()
-    listaninos.a
     class ItemTable(Table):
         attendanceid = Col('attendanceid')
         courseid = Col('courseid')
