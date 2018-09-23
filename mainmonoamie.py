@@ -224,8 +224,8 @@ def asistencia():
         weekatt14 = Col('weekatt14')
         weekatt15 = Col('weekatt15')
         classes = ['table', 'table-responsive', 'table-hover']
-
     htmlninosmatriculados = ItemTable(listaninos)
+    
     return render_template('dynamictable.html', title='asistencia', data = htmlninosmatriculados )
 
 
