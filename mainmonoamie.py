@@ -45,8 +45,6 @@ order by liftinghands.students.student_id;""")
     return render_template('dynamictable.html', title='Lista Ninos Matriculados', data = htmlninosmatriculados )
 
 
-    return render_template('tablematriculados.html', title='Reporte de ninos matriculados', data=listaninos)
-
 
 
 @app.route('/reportelistas', methods=['GET', 'POST'])
@@ -192,10 +190,50 @@ def login():
 def home():
     return render_template('home.html')
 
+@app.route('/asistencia', methods=['GET', 'POST'])
+def asistencia():
+
+    connectionobj = MySQLdb.connect(host=sqlattendanceserver, user=sqlserveruser, passwd=sqlpass, db='liftingasistencia', charset='utf8', use_unicode=True)
+    DBcursor = connectionobj.cursor()
+    DBcursor.execute("""select * from chicosyhorarios""")
+    listaninos = DBcursor.fetchall()
+    class ItemTable(Table):
+        attendanceid = Col('attendanceid')
+        courseid = Col('courseid')
+        coursename = Col('coursname')
+        dayoftheweek = Col('dayoftheweek')
+        teachername = Col('teachername')
+        teacherlastname = Col('teacherlastname')
+        teacherid = Col('teacherid')
+        studentname = Col('studentname')
+        studentlastname = Col('studentlastname')
+        studentid = Col('studentid')
+        weekatt1 = Col('weekatt1')
+        weekatt2 = Col('weekatt2')
+        weekatt3 = Col('weekatt3')
+        weekatt4 = Col('weekatt4')
+        weekatt5 = Col('weekatt5')
+        weekatt6 = Col('weekatt6')
+        weekatt7 = Col('weekatt7')
+        weekatt8 = Col('weekatt8')
+        weekatt9 = Col('weekatt9')
+        weekatt10 = Col('weekatt10')
+        weekatt11 = Col('weekatt11')
+        weekatt12 = Col('weekatt12')
+        weekatt13 = Col('weekatt13')
+        weekatt14 = Col('weekatt14')
+        weekatt15 = Col('weekatt15')
+        classes = ['table', 'table-responsive', 'table-hover']
+
+    htmlninosmatriculados = ItemTable(listaninos)
+    return render_template('dynamictable.html', title='asistencia', data = htmlninosmatriculados )
+
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
     application.run(host='0.0.0.0')
-
 
 
 
