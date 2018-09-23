@@ -7,6 +7,7 @@ from flask_table import Table, Col, LinkCol
 sqlserverip = '172.31.36.62'
 sqlserveruser = 'liftingmonoami'
 sqlpass = 'LiftingAnonos2018'
+sqlattendanceserver = '127.0.0.1'
 app = Flask(__name__)
 app.config.from_object(Config)
 
