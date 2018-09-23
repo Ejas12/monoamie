@@ -10,6 +10,12 @@ sqlpass = 'LiftingAnonos2018'
 sqlattendanceserver = '127.0.0.1'
 app = Flask(__name__)
 app.config.from_object(Config)
+def makeDictFactory(cursor):
+    columnNames = [d[0] for d in cursor.description]
+    def createRow(*args):
+        return dict(zip(columnNames, args))
+    return createRow
+
 
 @app.route('/NinosMatriculados', methods=['GET', 'POST'])
 def reporteNinosMatriculados():
@@ -196,31 +202,32 @@ def asistencia():
     connectionobj = MySQLdb.connect(host=sqlattendanceserver, user=sqlserveruser, passwd=sqlpass, db='liftingasistencia', charset='utf8', use_unicode=True)
     DBcursor = connectionobj.cursor()
     DBcursor.execute("""select attendanceid,
-courseid,
-coursename,
-dayoftheweek,
-teachername,
-teacherlastname,
-teacherid,
-studentname,
-studentlastname,
-studentid,
-weekatt1,
-weekatt2,
-weekatt3,
-weekatt4,
-weekatt5,
-weekatt6,
-weekatt7,
-weekatt8,
-weekatt9,
-weekatt10,
-weekatt11,
-weekatt12,
-weekatt13, 
-weekatt14,
-weekatt15
-from chicosyhorarios""")
+    courseid,
+    coursename,
+    dayoftheweek,
+    teachername,
+    teacherlastname,
+    teacherid,
+    studentname,
+    studentlastname,
+    studentid,
+    weekatt1,
+    weekatt2,
+    weekatt3,
+    weekatt4,
+    weekatt5,
+    weekatt6,
+    weekatt7,
+    weekatt8,
+    weekatt9,
+    weekatt10,
+    weekatt11,
+    weekatt12,
+    weekatt13, 
+    weekatt14,
+    weekatt15
+    from chicosyhorarios""")
+    DBcursor.rowfactory = makeDictFactory(DBcursor)
     listaninos = DBcursor.fetchall()
     class ItemTable(Table):
         attendanceid = Col('attendanceid')
