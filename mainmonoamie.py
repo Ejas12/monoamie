@@ -10,12 +10,12 @@ sqlpass = 'LiftingAnonos2018'
 sqlattendanceserver = '127.0.0.1'
 app = Flask(__name__)
 app.config.from_object(Config)
+
 def makeDictFactory(cursor):
     columnNames = [d[0] for d in cursor.description]
     def createRow(*args):
         return dict(zip(columnNames, args))
     return createRow
-
 
 @app.route('/NinosMatriculados', methods=['GET', 'POST'])
 def reporteNinosMatriculados():
@@ -230,7 +230,6 @@ def asistencia():
     DBcursor.rowfactory = makeDictFactory(DBcursor)
     listaninos = DBcursor.fetchall()
     class ItemTable(Table):
-        attendanceid = Col('attendanceid')
         courseid = Col('courseid')
         coursename = Col('coursname')
         dayoftheweek = Col('dayoftheweek')
