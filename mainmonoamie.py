@@ -199,7 +199,7 @@ def home():
 @app.route('/asistencia', methods=['GET', 'POST'])
 def asistencia():
 
-    connectionobj = MySQLdb.connect(host=sqlattendanceserver, user=sqlserveruser, passwd=sqlpass, db='liftingasistencia', charset='utf8', use_unicode=True)
+    connectionobj = MySQLdb.connect(host=sqlattendanceserver, user=sqlserveruser, passwd=sqlpass, db='liftingasistencia')
     DBcursor = connectionobj.cursor()
     DBcursor.execute("""select attendanceid,
     courseid,
