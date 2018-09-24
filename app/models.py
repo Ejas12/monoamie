@@ -2,8 +2,7 @@ from app import db
 
 class clasedbasistencia(db.Model):
     entryid = db.Column(db.Integer, primary_key=True)
-    attendanceid = db.Column(db.String(255), index=True, unique=False, nullable=False)
-    courseid = db.Column(db.String(255), index=True, unique=False, nullable=False)
+    courseid = db.Column(db.String(255), index=True, unique=False, nullable=false)
     coursename = db.Column(db.String(255), index=True, unique=False, nullable=False)
     dayoftheweek = db.Column(db.String(255), index=True, unique=False, nullable=False)
     teacherfirstname = db.Column(db.String(255), index=True, unique=False, nullable=False)

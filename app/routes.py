@@ -1,6 +1,6 @@
 from flask import render_template
 from app import app
-
+from flask_mysqldb import MySQLdb
 @app.route('/NinosMatriculados', methods=['GET', 'POST'])
 def reporteNinosMatriculados():
 

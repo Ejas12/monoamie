@@ -1,0 +1,742 @@
+"courseid","course_title","days","profefirstname","profelastname","staff_id","first_name","last_name","student_id"
+1,Tutoria 1er grado ,T,Marielena,Hernandez,58,Eber,Canales,56
+1,Tutoria 1er grado ,T,Marielena,Hernandez,58,Jonathan,Cermeno,175
+1,Tutoria 1er grado ,T,Marielena,Hernandez,58,Tiffany,Obando,36
+1,Tutoria 1er grado ,T,Marielena,Hernandez,58,Jhonefe,Lopez,130
+1,Tutoria 1er grado ,T,Marielena,Hernandez,58,Natalie,Vallecillos,107
+1,Tutoria 1er grado ,T,Marielena,Hernandez,58,Ashley,Murillo,32
+1,Tutoria 1er grado ,T,Marielena,Hernandez,58,Dayana,Alvarez,71
+1,Tutoria 1er grado ,T,Marielena,Hernandez,58,Junior,Carvajal,183
+2,Tutorias 3er grado A,M,Ana Yanci,Carmona,51,Allison,Arguedas,29
+2,Tutorias 3er grado A,M,Ana Yanci,Carmona,51,Kerly,Romero,127
+2,Tutorias 3er grado A,M,Ana Yanci,Carmona,51,Deikel,Davila,158
+2,Tutorias 3er grado A,M,Ana Yanci,Carmona,51,Isabel,Rodriguez,161
+2,Tutorias 3er grado A,M,Ana Yanci,Carmona,51,Bayoleth,Lopez,59
+2,Tutorias 3er grado A,M,Ana Yanci,Carmona,51,Yael,Cerdas,92
+2,Tutorias 3er grado A,M,Ana Yanci,Carmona,51,Harrinton,Yesca Guerrero,254
+2,Tutorias 3er grado A,M,Ana Yanci,Carmona,51,Freydder,Rocha,72
+3,Ingles 2do grado,M,Ana,Rojas,15,Jefferson,Alvarez,137
+3,Ingles 2do grado,M,Ana,Rojas,15,Ronny,Miranda,112
+3,Ingles 2do grado,M,Ana,Rojas,15,Keylin,Masis,204
+3,Ingles 2do grado,M,Ana,Rojas,15,Olga,Sequeira,89
+3,Ingles 2do grado,M,Ana,Rojas,15,Britny,Umana,237
+3,Ingles 2do grado,M,Ana,Rojas,15,Tamara,Elizondo,100
+3,Ingles 2do grado,M,Ana,Rojas,15,Kimberly,Zamora,187
+3,Ingles 2do grado,M,Ana,Rojas,15,Tiffany,Quesada,195
+3,Ingles 2do grado,M,Ana,Rojas,15,Pamela,Umana,102
+4,Tutoria Individual Prof Sharon,M,Sharon,Solano,52,Natalia,Ruiz,230
+5,Mate 5to grado,M,Felipe,Rodriguez,30,Jason,Vanegas,186
+5,Mate 5to grado,M,Felipe,Rodriguez,30,Angie,Espinoza,131
+5,Mate 5to grado,M,Felipe,Rodriguez,30,Maria Alexandra,Gonzalez,121
+5,Mate 5to grado,M,Felipe,Rodriguez,30,Jairo,Navarro,174
+5,Mate 5to grado,M,Felipe,Rodriguez,30,Breynin,Osmani,171
+5,Mate 5to grado,M,Felipe,Rodriguez,30,Stanley,Garcia,251
+5,Mate 5to grado,M,Felipe,Rodriguez,30,Juan Manuel,Castellon,213
+6,Arte Kinder (4-7anos),M,Fanny,Alfaro,28,Maria Fernanda,Ruiz,212
+6,Arte Kinder (4-7anos),M,Fanny,Alfaro,28,Dayana,Alvarez,71
+6,Arte Kinder (4-7anos),M,Fanny,Alfaro,28,Yerick,Vanegas,84
+6,Arte Kinder (4-7anos),M,Fanny,Alfaro,28,Kimberly,Obando,250
+6,Arte Kinder (4-7anos),M,Fanny,Alfaro,28,Guevara,Ian Jesus,253
+6,Arte Kinder (4-7anos),M,Fanny,Alfaro,28,Irvin,Rayo,225
+6,Arte Kinder (4-7anos),M,Fanny,Alfaro,28,Melanie,Mendez,64
+6,Arte Kinder (4-7anos),M,Fanny,Alfaro,28,Wendy,Gutierrez,31
+7,Gimnasia Kinder (4-7 anos),M,Arianne,Brenes,53,Heidy,Mairena,7
+7,Gimnasia Kinder (4-7 anos),M,Arianne,Brenes,53,Tiffany,Obando,36
+7,Gimnasia Kinder (4-7 anos),M,Arianne,Brenes,53,Genesis,Perez,217
+7,Gimnasia Kinder (4-7 anos),M,Arianne,Brenes,53,Hanna,Medina,173
+7,Gimnasia Kinder (4-7 anos),M,Arianne,Brenes,53,Keiry,Madrigal,17
+7,Gimnasia Kinder (4-7 anos),M,Arianne,Brenes,53,Bridgit,Rojas,168
+7,Gimnasia Kinder (4-7 anos),M,Arianne,Brenes,53,Leidy,Vargas,125
+7,Gimnasia Kinder (4-7 anos),M,Arianne,Brenes,53,Norma,Carrillo,90
+8,Futbol Kinder (4-7 anos),M,Manuel,Zuñiga,49,Bryan,Altamirano,167
+8,Futbol Kinder (4-7 anos),M,Manuel,Zuñiga,49,Christopher,Aburto,141
+8,Futbol Kinder (4-7 anos),M,Manuel,Zuñiga,49,Julian,Anchia,208
+8,Futbol Kinder (4-7 anos),M,Manuel,Zuñiga,49,Santiago,Zuniga,140
+8,Futbol Kinder (4-7 anos),M,Manuel,Zuñiga,49,Keylor,Chavez,257
+8,Futbol Kinder (4-7 anos),M,Manuel,Zuñiga,49,Alison Jimena,Sanchez,149
+8,Futbol Kinder (4-7 anos),M,Manuel,Zuñiga,49,Angeleque,Guzman,211
+9,Jiu-Jitsu Principiantes (7-20 anos),M,UCIMED,UCIMED,70,Jhonefe,Lopez,130
+9,Jiu-Jitsu Principiantes (7-20 anos),M,UCIMED,UCIMED,70,Junior,Carvajal,183
+9,Jiu-Jitsu Principiantes (7-20 anos),M,UCIMED,UCIMED,70,Angie,Perez,11
+9,Jiu-Jitsu Principiantes (7-20 anos),M,UCIMED,UCIMED,70,Naomi,Castillo,159
+9,Jiu-Jitsu Principiantes (7-20 anos),M,UCIMED,UCIMED,70,Samantha,Santamaria,117
+10,Tutorias 4to grado B,M,Ana Yanci,Carmona,51,Isabella,Baldizon,189
+10,Tutorias 4to grado B,M,Ana Yanci,Carmona,51,Anderson,Oconitrillo,203
+10,Tutorias 4to grado B,M,Ana Yanci,Carmona,51,Vivian,Magally,245
+10,Tutorias 4to grado B,M,Ana Yanci,Carmona,51,Yareydi,Angulo Velasquez,116
+10,Tutorias 4to grado B,M,Ana Yanci,Carmona,51,Kenneth,Perez,45
+10,Tutorias 4to grado B,M,Ana Yanci,Carmona,51,Estrella,Lemuz,52
+10,Tutorias 4to grado B,M,Ana Yanci,Carmona,51,Jose,Lazarte,50
+10,Tutorias 4to grado B,M,Ana Yanci,Carmona,51,Vivian,Murillo,114
+10,Tutorias 4to grado B,M,Ana Yanci,Carmona,51,Andres,Mora,145
+11,Ingles 3er grado B,M,Ana,Rojas,15,Kerly,Romero,127
+11,Ingles 3er grado B,M,Ana,Rojas,15,Isabel,Rodriguez,161
+11,Ingles 3er grado B,M,Ana,Rojas,15,Yael,Cerdas,92
+11,Ingles 3er grado B,M,Ana,Rojas,15,Neihtan,Campos,191
+11,Ingles 3er grado B,M,Ana,Rojas,15,Freydder,Rocha,72
+11,Ingles 3er grado B,M,Ana,Rojas,15,Kristel,Vanegas,128
+11,Ingles 3er grado B,M,Ana,Rojas,15,Lissi,Ortega,229
+11,Ingles 3er grado B,M,Ana,Rojas,15,Wendy,Flores,40
+12,Tutoria Individual Prof Felipe,M,Felipe,Rodriguez,30,Naomi,Castillo,159
+13,Teatro Ninos (7-12 anos),M,UCIMED,UCIMED,70,Kendall,Esquivel,153
+13,Teatro Ninos (7-12 anos),M,UCIMED,UCIMED,70,Bryan,Lopez,169
+13,Teatro Ninos (7-12 anos),M,UCIMED,UCIMED,70,Tabata,Mora,105
+13,Teatro Ninos (7-12 anos),M,UCIMED,UCIMED,70,Genesis,Perez,217
+13,Teatro Ninos (7-12 anos),M,UCIMED,UCIMED,70,Irvin,Rayo,225
+13,Teatro Ninos (7-12 anos),M,UCIMED,UCIMED,70,Dayana,Alvarez,71
+14,Capoeira (7-12 anos),M,Eduardo,Pochet,54,Yomaira,Peinado,66
+14,Capoeira (7-12 anos),M,Eduardo,Pochet,54,Aston,Porras,199
+14,Capoeira (7-12 anos),M,Eduardo,Pochet,54,Ronny,Miranda,112
+14,Capoeira (7-12 anos),M,Eduardo,Pochet,54,Justin,Anchia,165
+14,Capoeira (7-12 anos),M,Eduardo,Pochet,54,Samantha,Santamaria,117
+14,Capoeira (7-12 anos),M,Eduardo,Pochet,54,Julian,Anchia,208
+14,Capoeira (7-12 anos),M,Eduardo,Pochet,54,Sebastian,Bejarano,115
+14,Capoeira (7-12 anos),M,Eduardo,Pochet,54,Greivin,Maravilla,227
+25,Lectoescritura Adultos,T,Carolina,Castro,17,Maria Elizabeth,Bermudez,232
+25,Lectoescritura Adultos,T,Carolina,Castro,17,Rosario,Zarate,182
+25,Lectoescritura Adultos,T,Carolina,Castro,17,Aston,Porras,199
+25,Lectoescritura Adultos,T,Carolina,Castro,17,Fanny,Porras,57
+25,Lectoescritura Adultos,T,Carolina,Castro,17,Teresa,Garcia,122
+25,Lectoescritura Adultos,T,Carolina,Castro,17,Soveida,Reyes,249
+25,Lectoescritura Adultos,T,Carolina,Castro,17,Imna,Mondoy,134
+25,Lectoescritura Adultos,T,Carolina,Castro,17,Maria Digna,Bermudez,259
+25,Lectoescritura Adultos,T,Carolina,Castro,17,Blanca,Alvarez,240
+25,Lectoescritura Adultos,T,Carolina,Castro,17,Mercedes,Sanchez,4
+25,Lectoescritura Adultos,T,Carolina,Castro,17,Maria De los Angeles,Serrano,27
+25,Lectoescritura Adultos,T,Carolina,Castro,17,Olga,Quiros,111
+15,Tutoria Individual Prof Dayana,M,Dayana,Castro,21,Isaac,Acevedo,238
+16,Computo 3ero y 4to grado,M,Esther,Mora,25,Allison,Arguedas,29
+16,Computo 3ero y 4to grado,M,Esther,Mora,25,Aston,Porras,199
+16,Computo 3ero y 4to grado,M,Esther,Mora,25,Isabella,Baldizon,189
+16,Computo 3ero y 4to grado,M,Esther,Mora,25,Jimena,Calvo,132
+16,Computo 3ero y 4to grado,M,Esther,Mora,25,Deikel,Davila,158
+16,Computo 3ero y 4to grado,M,Esther,Mora,25,Yareydi,Angulo Velasquez,116
+16,Computo 3ero y 4to grado,M,Esther,Mora,25,Kenneth,Perez,45
+16,Computo 3ero y 4to grado,M,Esther,Mora,25,Josue,Chaves,23
+16,Computo 3ero y 4to grado,M,Esther,Mora,25,Estrella,Lemuz,52
+16,Computo 3ero y 4to grado,M,Esther,Mora,25,Bayoleth,Lopez,59
+17,Gimnasia Primaria (8-12 anos),M,Arianne,Brenes,53,Keylin,Perez,43
+17,Gimnasia Primaria (8-12 anos),M,Arianne,Brenes,53,Joshua,Perez,54
+17,Gimnasia Primaria (8-12 anos),M,Arianne,Brenes,53,Jeylin,Altamirano,13
+17,Gimnasia Primaria (8-12 anos),M,Arianne,Brenes,53,Raquel,Montes,201
+17,Gimnasia Primaria (8-12 anos),M,Arianne,Brenes,53,Pamela,Umana,102
+17,Gimnasia Primaria (8-12 anos),M,Arianne,Brenes,53,Tamara,Uma�a,110
+17,Gimnasia Primaria (8-12 anos),M,Arianne,Brenes,53,Kiara,Angulo Velasquez,194
+17,Gimnasia Primaria (8-12 anos),M,Arianne,Brenes,53,Kristel,Vanegas,128
+17,Gimnasia Primaria (8-12 anos),M,Arianne,Brenes,53,Tamara,Elizondo,100
+17,Gimnasia Primaria (8-12 anos),M,Arianne,Brenes,53,Naomi,Castillo,159
+18,Cocina Adolescentes (14-16 anos),M,UCIMED,UCIMED,70,Jefferson,Obando,34
+18,Cocina Adolescentes (14-16 anos),M,UCIMED,UCIMED,70,Ashley,Anchia,244
+18,Cocina Adolescentes (14-16 anos),M,UCIMED,UCIMED,70,Anthony,Anchia,246
+18,Cocina Adolescentes (14-16 anos),M,UCIMED,UCIMED,70,Bryan,Montes,136
+18,Cocina Adolescentes (14-16 anos),M,UCIMED,UCIMED,70,Angelina,Miranda,185
+18,Cocina Adolescentes (14-16 anos),M,UCIMED,UCIMED,70,Keychel,Scott,37
+18,Cocina Adolescentes (14-16 anos),M,UCIMED,UCIMED,70,Genesis,Chaves,202
+18,Cocina Adolescentes (14-16 anos),M,UCIMED,UCIMED,70,Jerson,Gonzalez,248
+19,Ingles 7mo ano,M,Daniel,Granados,56,Jefferson,Obando,34
+19,Ingles 7mo ano,M,Daniel,Granados,56,Elieth,Oporta,148
+19,Ingles 7mo ano,M,Daniel,Granados,56,Erick,Zamora,231
+19,Ingles 7mo ano,M,Daniel,Granados,56,Cindy,Barboza,218
+19,Ingles 7mo ano,M,Daniel,Granados,56,Daniela,Rayo,58
+19,Ingles 7mo ano,M,Daniel,Granados,56,Stephanie,Diaz,69
+19,Ingles 7mo ano,M,Daniel,Granados,56,Naydelin,Rueda,101
+20,Ingles Adultos A,M,Jose,Roberto,41,Neilyn,Prado,53
+20,Ingles Adultos A,M,Jose,Roberto,41,Amparo,Mendoza,12
+20,Ingles Adultos A,M,Jose,Roberto,41,Maria del Carmen,Villareal,190
+20,Ingles Adultos A,M,Jose,Roberto,41,Rosa,Marin,39
+20,Ingles Adultos A,M,Jose,Roberto,41,Blanca,Alvarez,240
+21,Arte Adultos,T,Juliana,Lachner,57,Maria Elizabeth,Bermudez,232
+21,Arte Adultos,T,Juliana,Lachner,57,Merida,De la O,61
+21,Arte Adultos,T,Juliana,Lachner,57,Nidia,Mora,188
+21,Arte Adultos,T,Juliana,Lachner,57,Fanny,Porras,57
+21,Arte Adultos,T,Juliana,Lachner,57,Karina,Osorno,219
+21,Arte Adultos,T,Juliana,Lachner,57,Xinia,Marin,247
+21,Arte Adultos,T,Juliana,Lachner,57,Cindy,Murillo,120
+21,Arte Adultos,T,Juliana,Lachner,57,Olga,Quiros,111
+22,Futbol Primaria A (8-12 anos),T,Manuel,Zuñiga,49,Juliana,Perez,18
+22,Futbol Primaria A (8-12 anos),T,Manuel,Zuñiga,49,Raquel,Montes,201
+22,Futbol Primaria A (8-12 anos),T,Manuel,Zuñiga,49,Kendall,Esquivel,153
+22,Futbol Primaria A (8-12 anos),T,Manuel,Zuñiga,49,Sebastian,Bejarano,115
+22,Futbol Primaria A (8-12 anos),T,Manuel,Zuñiga,49,Junior,Carvajal,183
+22,Futbol Primaria A (8-12 anos),T,Manuel,Zuñiga,49,Justin,Obando,44
+22,Futbol Primaria A (8-12 anos),T,Manuel,Zuñiga,49,Jairo,Navarro,174
+22,Futbol Primaria A (8-12 anos),T,Manuel,Zuñiga,49,Neihtan,Campos,191
+22,Futbol Primaria A (8-12 anos),T,Manuel,Zuñiga,49,Stanley,Garcia,251
+22,Futbol Primaria A (8-12 anos),T,Manuel,Zuñiga,49,Jose,Lazarte,50
+23,Cocina Kinder (4-7 anos),T,Juliana,Burgues,43,Heidy,Mairena,7
+23,Cocina Kinder (4-7 anos),T,Juliana,Burgues,43,Jonathan,Cermeno,175
+23,Cocina Kinder (4-7 anos),T,Juliana,Burgues,43,Thiago,Valverde,109
+23,Cocina Kinder (4-7 anos),T,Juliana,Burgues,43,Bryan,Altamirano,167
+23,Cocina Kinder (4-7 anos),T,Juliana,Burgues,43,Dilan,Vanegas,75
+23,Cocina Kinder (4-7 anos),T,Juliana,Burgues,43,Tiffany,Obando,36
+23,Cocina Kinder (4-7 anos),T,Juliana,Burgues,43,Jhonefe,Lopez,130
+23,Cocina Kinder (4-7 anos),T,Juliana,Burgues,43,Julian,Anchia,208
+24,Hip-Hop Primaria A (8-12 anos),T,UCIMED,UCIMED,70,Isabella,Baldizon,189
+24,Hip-Hop Primaria A (8-12 anos),T,UCIMED,UCIMED,70,Tamara,Uma�a,110
+24,Hip-Hop Primaria A (8-12 anos),T,UCIMED,UCIMED,70,Keychel,Scott,37
+24,Hip-Hop Primaria A (8-12 anos),T,UCIMED,UCIMED,70,Rafael Antonio,Ruiz,95
+24,Hip-Hop Primaria A (8-12 anos),T,UCIMED,UCIMED,70,Yael,Cerdas,92
+24,Hip-Hop Primaria A (8-12 anos),T,UCIMED,UCIMED,70,Freydder,Rocha,72
+24,Hip-Hop Primaria A (8-12 anos),T,UCIMED,UCIMED,70,Tabata,Mora,105
+24,Hip-Hop Primaria A (8-12 anos),T,UCIMED,UCIMED,70,Samantha,Santamaria,117
+24,Hip-Hop Primaria A (8-12 anos),T,UCIMED,UCIMED,70,Angelina,Miranda,185
+26,Apreciación del Cine Ninos (8 a 12 anos),T,UCIMED,UCIMED,70,Raquel,Montes,201
+26,Apreciación del Cine Ninos (8 a 12 anos),T,UCIMED,UCIMED,70,Jimena,Calvo,132
+26,Apreciación del Cine Ninos (8 a 12 anos),T,UCIMED,UCIMED,70,Maria Alexandra,Gonzalez,121
+26,Apreciación del Cine Ninos (8 a 12 anos),T,UCIMED,UCIMED,70,Breynin,Osmani,171
+26,Apreciación del Cine Ninos (8 a 12 anos),T,UCIMED,UCIMED,70,Alberth,Abarca,197
+26,Apreciación del Cine Ninos (8 a 12 anos),T,UCIMED,UCIMED,70,Freydder,Rocha,72
+26,Apreciación del Cine Ninos (8 a 12 anos),T,UCIMED,UCIMED,70,Kristel,Vanegas,128
+26,Apreciación del Cine Ninos (8 a 12 anos),T,UCIMED,UCIMED,70,Tabata,Mora,105
+27,Mate Kinder,T,Fernando,Chavarria,31,Thiago,Valverde,109
+27,Mate Kinder,T,Fernando,Chavarria,31,Bryan,Altamirano,167
+27,Mate Kinder,T,Fernando,Chavarria,31,Dilan,Vanegas,75
+27,Mate Kinder,T,Fernando,Chavarria,31,Hanna,Medina,173
+27,Mate Kinder,T,Fernando,Chavarria,31,Julian,Anchia,208
+27,Mate Kinder,T,Fernando,Chavarria,31,Maria Fernanda,Ruiz,212
+27,Mate Kinder,T,Fernando,Chavarria,31,Bridgit,Rojas,168
+27,Mate Kinder,T,Fernando,Chavarria,31,Yerick,Vanegas,84
+27,Mate Kinder,T,Fernando,Chavarria,31,Leidy,Vargas,125
+27,Mate Kinder,T,Fernando,Chavarria,31,Solange,Mora,20
+28,Hip-Hop Adolescentes (13-17 anos),T,UCIMED,UCIMED,70,Nicole,Perez,104
+28,Hip-Hop Adolescentes (13-17 anos),T,UCIMED,UCIMED,70,Nikole,Leon,94
+28,Hip-Hop Adolescentes (13-17 anos),T,UCIMED,UCIMED,70,Tamara,Uma�a,110
+29,Ingles 3er grado A,T,Karol,Jimenez,44,Deikel,Davila,158
+29,Ingles 3er grado A,T,Karol,Jimenez,44,Genesis,Garcia,15
+29,Ingles 3er grado A,T,Karol,Jimenez,44,Bayoleth,Lopez,59
+29,Ingles 3er grado A,T,Karol,Jimenez,44,Greivin,Maravilla,227
+29,Ingles 3er grado A,T,Karol,Jimenez,44,Samantha,Santamaria,117
+30,Ingles 5to grado,T,Fiorella,Montero,32,Paola,Perez,98
+30,Ingles 5to grado,T,Fiorella,Montero,32,Leonardo,Medina,67
+30,Ingles 5to grado,T,Fiorella,Montero,32,Raquel,Montes,201
+30,Ingles 5to grado,T,Fiorella,Montero,32,Tamara,Uma�a,110
+30,Ingles 5to grado,T,Fiorella,Montero,32,Keychel,Scott,37
+30,Ingles 5to grado,T,Fiorella,Montero,32,Angie,Espinoza,131
+30,Ingles 5to grado,T,Fiorella,Montero,32,Maria Alexandra,Gonzalez,121
+30,Ingles 5to grado,T,Fiorella,Montero,32,Juan Manuel,Castellon,213
+31,Cocina Primaria (8-10 anos),T,Raquel,Torres,75,Benjamin,Canales,151
+31,Cocina Primaria (8-10 anos),T,Raquel,Torres,75,Eber,Canales,56
+31,Cocina Primaria (8-10 anos),T,Raquel,Torres,75,Kerly,Romero,127
+31,Cocina Primaria (8-10 anos),T,Raquel,Torres,75,Jefferson,Alvarez,137
+31,Cocina Primaria (8-10 anos),T,Raquel,Torres,75,Joshua,Perez,54
+31,Cocina Primaria (8-10 anos),T,Raquel,Torres,75,Allison,Arguedas,29
+31,Cocina Primaria (8-10 anos),T,Raquel,Torres,75,Katherina,Berrios,164
+31,Cocina Primaria (8-10 anos),T,Raquel,Torres,75,Yomaira,Peinado,66
+32,Danza Adolescentes (12-16 anos),T,Gloriana,Alvarado,36,Sharon,Fonseca,119
+32,Danza Adolescentes (12-16 anos),T,Gloriana,Alvarado,36,Keylin,Perez,43
+32,Danza Adolescentes (12-16 anos),T,Gloriana,Alvarado,36,Nicole,Perez,104
+32,Danza Adolescentes (12-16 anos),T,Gloriana,Alvarado,36,Kiara,Angulo Velasquez,194
+32,Danza Adolescentes (12-16 anos),T,Gloriana,Alvarado,36,Nikole,Leon,94
+32,Danza Adolescentes (12-16 anos),T,Gloriana,Alvarado,36,Genesis,Chaves,202
+32,Danza Adolescentes (12-16 anos),T,Gloriana,Alvarado,36,Cindy,Barboza,218
+32,Danza Adolescentes (12-16 anos),T,Gloriana,Alvarado,36,Alison,Sanchez,255
+33,Tutorias 7mo ano,T,Alberto,Rucavado,12,Jefferson,Obando,34
+33,Tutorias 7mo ano,T,Alberto,Rucavado,12,Cristian,Gutierrez,49
+33,Tutorias 7mo ano,T,Alberto,Rucavado,12,Braudy,Castro,146
+33,Tutorias 7mo ano,T,Alberto,Rucavado,12,Elieth,Oporta,148
+33,Tutorias 7mo ano,T,Alberto,Rucavado,12,Erick,Zamora,231
+33,Tutorias 7mo ano,T,Alberto,Rucavado,12,Naydelin,Rueda,101
+34,Computo Adultos,T,Alfredo,Diaz,13,Neilyn,Prado,53
+34,Computo Adultos,T,Alfredo,Diaz,13,Marta,Alvarez Sanchez,242
+34,Computo Adultos,T,Alfredo,Diaz,13,Karina,Osorno,219
+34,Computo Adultos,T,Alfredo,Diaz,13,Tatiana,Morales,6
+34,Computo Adultos,T,Alfredo,Diaz,13,Mariana,Morales,30
+34,Computo Adultos,T,Alfredo,Diaz,13,Amparo,Mendoza,12
+34,Computo Adultos,T,Alfredo,Diaz,13,Maria del Carmen,Villareal,190
+34,Computo Adultos,T,Alfredo,Diaz,13,Soveida,Reyes,249
+34,Computo Adultos,T,Alfredo,Diaz,13,Yorlene,Morales,96
+34,Computo Adultos,T,Alfredo,Diaz,13,Sherry,Chaves,260
+34,Computo Adultos,T,Alfredo,Diaz,13,Blanca,Alvarez,240
+35,Arte Adolescentes (13-16 anos),T,Carolina,Arjona,59,Sharon,Fonseca,119
+35,Arte Adolescentes (13-16 anos),T,Carolina,Arjona,59,Kendall,Esquivel,153
+35,Arte Adolescentes (13-16 anos),T,Carolina,Arjona,59,Pamela,Baltodano,160
+35,Arte Adolescentes (13-16 anos),T,Carolina,Arjona,59,Genesis,Chaves,202
+35,Arte Adolescentes (13-16 anos),T,Carolina,Arjona,59,Angie,Perez,11
+35,Arte Adolescentes (13-16 anos),T,Carolina,Arjona,59,Valery,Maravilla,113
+35,Arte Adolescentes (13-16 anos),T,Carolina,Arjona,59,Stephanie,Diaz,69
+35,Arte Adolescentes (13-16 anos),T,Carolina,Arjona,59,Anderson,Quesada,63
+36,Tutoria Individual Prof Mauricio,W,Mauricio,Gomez,74,Kiara,Angulo Velasquez,194
+36,Tutoria Individual Prof Mauricio,W,Mauricio,Gomez,74,Angie,Perez,11
+37,Frances Basico,W,UCIMED,UCIMED,70,Ashley,Anchia,244
+37,Frances Basico,W,UCIMED,UCIMED,70,Kendall,Esquivel,153
+37,Frances Basico,W,UCIMED,UCIMED,70,Sebastian,Bejarano,115
+37,Frances Basico,W,UCIMED,UCIMED,70,Jerson,Gonzalez,248
+37,Frances Basico,W,UCIMED,UCIMED,70,Daniela,Rayo,58
+37,Frances Basico,W,UCIMED,UCIMED,70,Anderson,Quesada,63
+38,Computo 5to y 6to grado B,W,Julian,Villalta,42,Anthony,Anchia,246
+38,Computo 5to y 6to grado B,W,Julian,Villalta,42,Keychel,Scott,37
+38,Computo 5to y 6to grado B,W,Julian,Villalta,42,Angie,Espinoza,131
+38,Computo 5to y 6to grado B,W,Julian,Villalta,42,Breynin,Osmani,171
+38,Computo 5to y 6to grado B,W,Julian,Villalta,42,Valery,Maravilla,113
+38,Computo 5to y 6to grado B,W,Julian,Villalta,42,Justin,Obando,44
+39,Arte Primaria A (8-12 anos),W,Juliana,Lachner,57,Wendy,Gutierrez,31
+39,Arte Primaria A (8-12 anos),W,Juliana,Lachner,57,Keylin,Perez,43
+39,Arte Primaria A (8-12 anos),W,Juliana,Lachner,57,Pamela,Umana,102
+39,Arte Primaria A (8-12 anos),W,Juliana,Lachner,57,Natalia,Ruiz,230
+39,Arte Primaria A (8-12 anos),W,Juliana,Lachner,57,Kenneth,Perez,45
+39,Arte Primaria A (8-12 anos),W,Juliana,Lachner,57,Estrella,Lemuz,52
+39,Arte Primaria A (8-12 anos),W,Juliana,Lachner,57,Bayoleth,Lopez,59
+39,Arte Primaria A (8-12 anos),W,Juliana,Lachner,57,Stanley,Garcia,251
+39,Arte Primaria A (8-12 anos),W,Juliana,Lachner,57,Olga,Sequeira,89
+40,Ballet Kinder (4-7 anos) ,W,UCIMED,UCIMED,70,Heidy,Mairena,7
+40,Ballet Kinder (4-7 anos) ,W,UCIMED,UCIMED,70,Tiffany,Obando,36
+40,Ballet Kinder (4-7 anos) ,W,UCIMED,UCIMED,70,Hanna,Medina,173
+40,Ballet Kinder (4-7 anos) ,W,UCIMED,UCIMED,70,Natalie,Vallecillos,107
+40,Ballet Kinder (4-7 anos) ,W,UCIMED,UCIMED,70,Ashley,Murillo,32
+40,Ballet Kinder (4-7 anos) ,W,UCIMED,UCIMED,70,Maria Fernanda,Ruiz,212
+40,Ballet Kinder (4-7 anos) ,W,UCIMED,UCIMED,70,Keiry,Madrigal,17
+40,Ballet Kinder (4-7 anos) ,W,UCIMED,UCIMED,70,Bridgit,Rojas,168
+40,Ballet Kinder (4-7 anos) ,W,UCIMED,UCIMED,70,Leidy,Vargas,125
+40,Ballet Kinder (4-7 anos) ,W,UCIMED,UCIMED,70,Kimberly,Obando,250
+40,Ballet Kinder (4-7 anos) ,W,UCIMED,UCIMED,70,Genesis,Garcia,15
+41,Mate 4to grado B,W,Felipe,Rodriguez,30,Katherina,Berrios,164
+41,Mate 4to grado B,W,Felipe,Rodriguez,30,Isabella,Baldizon,189
+41,Mate 4to grado B,W,Felipe,Rodriguez,30,Anderson,Oconitrillo,203
+41,Mate 4to grado B,W,Felipe,Rodriguez,30,Jimena,Calvo,132
+41,Mate 4to grado B,W,Felipe,Rodriguez,30,Estrella,Lemuz,52
+41,Mate 4to grado B,W,Felipe,Rodriguez,30,Jose,Lazarte,50
+41,Mate 4to grado B,W,Felipe,Rodriguez,30,Andres,Mora,145
+43,Arte Primaria B (8-12 anos),W,UCIMED,UCIMED,70,Benjamin,Canales,151
+43,Arte Primaria B (8-12 anos),W,UCIMED,UCIMED,70,Genesis,Perez,217
+43,Arte Primaria B (8-12 anos),W,UCIMED,UCIMED,70,Joshua,Perez,54
+43,Arte Primaria B (8-12 anos),W,UCIMED,UCIMED,70,Allison,Arguedas,29
+43,Arte Primaria B (8-12 anos),W,UCIMED,UCIMED,70,Yomaira,Peinado,66
+43,Arte Primaria B (8-12 anos),W,UCIMED,UCIMED,70,Angie,Espinoza,131
+43,Arte Primaria B (8-12 anos),W,UCIMED,UCIMED,70,Breynin,Osmani,171
+43,Arte Primaria B (8-12 anos),W,UCIMED,UCIMED,70,Kristel,Vanegas,128
+43,Arte Primaria B (8-12 anos),W,UCIMED,UCIMED,70,Isaac,Acevedo,238
+43,Arte Primaria B (8-12 anos),W,UCIMED,UCIMED,70,Gari,Acevedo,26
+44,Hip-Hop Primaria B (8-12 anos),W,UCIMED,UCIMED,70,Leonardo,Medina,67
+44,Hip-Hop Primaria B (8-12 anos),W,UCIMED,UCIMED,70,Kendall,Esquivel,153
+44,Hip-Hop Primaria B (8-12 anos),W,UCIMED,UCIMED,70,Bayoleth,Lopez,59
+44,Hip-Hop Primaria B (8-12 anos),W,UCIMED,UCIMED,70,Olga,Sequeira,89
+44,Hip-Hop Primaria B (8-12 anos),W,UCIMED,UCIMED,70,Naomi,Castillo,159
+45,Mate 1er grado,W,Crisitina,Zumbado,18,Benjamin,Canales,151
+45,Mate 1er grado,W,Crisitina,Zumbado,18,Eber,Canales,56
+45,Mate 1er grado,W,Crisitina,Zumbado,18,Heidy,Mairena,7
+45,Mate 1er grado,W,Crisitina,Zumbado,18,Jonathan,Cermeno,175
+45,Mate 1er grado,W,Crisitina,Zumbado,18,Wendy,Gutierrez,31
+45,Mate 1er grado,W,Crisitina,Zumbado,18,Yomaira,Peinado,66
+45,Mate 1er grado,W,Crisitina,Zumbado,18,Tiffany,Obando,36
+45,Mate 1er grado,W,Crisitina,Zumbado,18,Jhonefe,Lopez,130
+45,Mate 1er grado,W,Crisitina,Zumbado,18,Natalie,Vallecillos,107
+45,Mate 1er grado,W,Crisitina,Zumbado,18,Ashley,Murillo,32
+47,Aprendiendo a alimentarnos Adultos,W,UCIMED,UCIMED,70,Dinarte,Migdalia,235
+47,Aprendiendo a alimentarnos Adultos,W,UCIMED,UCIMED,70,Julia,Andrade,70
+47,Aprendiendo a alimentarnos Adultos,W,UCIMED,UCIMED,70,Yorlene,Morales,96
+47,Aprendiendo a alimentarnos Adultos,W,UCIMED,UCIMED,70,Maria Digna,Bermudez,259
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Lissclay,Perez,214
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Anthony,Perez-Pequeno,209
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Jefferson,Flores,24
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Paola,Perez,98
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Justin,Flores,162
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Keylin,Perez,43
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Brandon,Perez,236
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Jason,Vanegas,186
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Bryan,Montes,136
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Kendall,Esquivel,153
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Sebastian,Bejarano,115
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Nikole,Leon,94
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Josue,Chaves,23
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Jerson,Gonzalez,248
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Juan,Rugama,41
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Jairo,Navarro,174
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Jose,Lazarte,50
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Harrinton,Yesca Guerrero,254
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Brandon,Rayo,129
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Greivin,Maravilla,227
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Valery,Maravilla,113
+48,Jiu-Jitsu Avanzado A (7-20 anos),W,Adrian,Alvarado,9,Caleb,Mora,196
+49,Mate 3er grado A,H,Eugenia,Muñoz,26,Joshua,Perez,54
+49,Mate 3er grado A,H,Eugenia,Muñoz,26,Genesis,Garcia,15
+49,Mate 3er grado A,H,Eugenia,Muñoz,26,Neihtan,Campos,191
+49,Mate 3er grado A,H,Eugenia,Muñoz,26,Harrinton,Yesca Guerrero,254
+49,Mate 3er grado A,H,Eugenia,Muñoz,26,Freydder,Rocha,72
+49,Mate 3er grado A,H,Eugenia,Muñoz,26,Kristel,Vanegas,128
+49,Mate 3er grado A,H,Eugenia,Muñoz,26,Greivin,Maravilla,227
+49,Mate 3er grado A,H,Eugenia,Muñoz,26,Wendy,Flores,40
+50,Arte con Amor Primaria (8-12 anos),H,Ana,Leticia,14,Katherina,Berrios,164
+50,Arte con Amor Primaria (8-12 anos),H,Ana,Leticia,14,Tamara,Uma�a,110
+50,Arte con Amor Primaria (8-12 anos),H,Ana,Leticia,14,Jimena,Calvo,132
+50,Arte con Amor Primaria (8-12 anos),H,Ana,Leticia,14,Keychel,Scott,37
+50,Arte con Amor Primaria (8-12 anos),H,Ana,Leticia,14,Yareydi,Angulo Velasquez,116
+50,Arte con Amor Primaria (8-12 anos),H,Ana,Leticia,14,Isabel,Rodriguez,161
+50,Arte con Amor Primaria (8-12 anos),H,Ana,Leticia,14,Breynin,Osmani,171
+50,Arte con Amor Primaria (8-12 anos),H,Ana,Leticia,14,Brandon,Rayo,129
+51,Cocina Pre Adolescentes (11-13 anos),H,Zaida,Placido,60,Breynin,Osmani,171
+51,Cocina Pre Adolescentes (11-13 anos),H,Zaida,Placido,60,Jeylin,Altamirano,13
+51,Cocina Pre Adolescentes (11-13 anos),H,Zaida,Placido,60,Keylin,Perez,43
+51,Cocina Pre Adolescentes (11-13 anos),H,Zaida,Placido,60,Lissclay,Perez,214
+51,Cocina Pre Adolescentes (11-13 anos),H,Zaida,Placido,60,Jefferson,Flores,24
+51,Cocina Pre Adolescentes (11-13 anos),H,Zaida,Placido,60,Leonardo,Medina,67
+51,Cocina Pre Adolescentes (11-13 anos),H,Zaida,Placido,60,Raquel,Montes,201
+51,Cocina Pre Adolescentes (11-13 anos),H,Zaida,Placido,60,Anderson,Oconitrillo,203
+51,Cocina Pre Adolescentes (11-13 anos),H,Zaida,Placido,60,Juliana,Perez,18
+52,Mate 6to grado,H,Eugenia,Muñoz,26,Jeylin,Altamirano,13
+52,Mate 6to grado,H,Eugenia,Muñoz,26,Anthony,Anchia,246
+52,Mate 6to grado,H,Eugenia,Muñoz,26,Angelina,Miranda,185
+52,Mate 6to grado,H,Eugenia,Muñoz,26,Kiara,Angulo Velasquez,194
+52,Mate 6to grado,H,Eugenia,Muñoz,26,Sebastian,Bejarano,115
+52,Mate 6to grado,H,Eugenia,Muñoz,26,Angie,Perez,11
+52,Mate 6to grado,H,Eugenia,Muñoz,26,Alberth,Abarca,197
+52,Mate 6to grado,H,Eugenia,Muñoz,26,Valery,Maravilla,113
+52,Mate 6to grado,H,Eugenia,Muñoz,26,Stephanie,Diaz,69
+53,Tutorias 2do grado,H,Ariana,Chacon,16,Jefferson,Alvarez,137
+53,Tutorias 2do grado,H,Ariana,Chacon,16,Ronny,Miranda,112
+53,Tutorias 2do grado,H,Ariana,Chacon,16,Keylin,Masis,204
+53,Tutorias 2do grado,H,Ariana,Chacon,16,Tamara,Elizondo,100
+53,Tutorias 2do grado,H,Ariana,Chacon,16,Isaac,Acevedo,238
+53,Tutorias 2do grado,H,Ariana,Chacon,16,Tabata,Mora,105
+53,Tutorias 2do grado,H,Ariana,Chacon,16,Dayana,Jarquin,177
+53,Tutorias 2do grado,H,Ariana,Chacon,16,Kimberly,Zamora,187
+53,Tutorias 2do grado,H,Ariana,Chacon,16,Litzi Naomi,Mejia,261
+54,Computo 1ero y 2do grado,H,Luis,Solano,48,Benjamin,Canales,151
+54,Computo 1ero y 2do grado,H,Luis,Solano,48,Eber,Canales,56
+54,Computo 1ero y 2do grado,H,Luis,Solano,48,Heidy,Mairena,7
+54,Computo 1ero y 2do grado,H,Luis,Solano,48,Jonathan,Cermeno,175
+54,Computo 1ero y 2do grado,H,Luis,Solano,48,Yomaira,Peinado,66
+54,Computo 1ero y 2do grado,H,Luis,Solano,48,Tiffany,Obando,36
+54,Computo 1ero y 2do grado,H,Luis,Solano,48,Natalie,Vallecillos,107
+54,Computo 1ero y 2do grado,H,Luis,Solano,48,Ashley,Murillo,32
+54,Computo 1ero y 2do grado,H,Luis,Solano,48,Dayana,Alvarez,71
+54,Computo 1ero y 2do grado,H,Luis,Solano,48,Olga,Sequeira,89
+55,Tutorias 3er grado B,H,Alejandra,Moreira,61,Lissclay,Perez,214
+55,Tutorias 3er grado B,H,Alejandra,Moreira,61,Anthony,Perez-Pequeno,209
+55,Tutorias 3er grado B,H,Alejandra,Moreira,61,Jefferson,Flores,24
+55,Tutorias 3er grado B,H,Alejandra,Moreira,61,Justin,Anchia,165
+55,Tutorias 3er grado B,H,Alejandra,Moreira,61,Neihtan,Campos,191
+55,Tutorias 3er grado B,H,Alejandra,Moreira,61,Gari,Acevedo,26
+55,Tutorias 3er grado B,H,Alejandra,Moreira,61,Greivin,Maravilla,227
+55,Tutorias 3er grado B,H,Alejandra,Moreira,61,Wendy,Flores,40
+56,Hagamos Nuestro Propio Negocio Adultos,H,Noelia,Arias,62,Rosario,Zarate,182
+56,Hagamos Nuestro Propio Negocio Adultos,H,Noelia,Arias,62,Soveida,Reyes,249
+56,Hagamos Nuestro Propio Negocio Adultos,H,Noelia,Arias,62,Yorlene,Morales,96
+56,Hagamos Nuestro Propio Negocio Adultos,H,Noelia,Arias,62,Yahaira,Baltodano,252
+56,Hagamos Nuestro Propio Negocio Adultos,H,Noelia,Arias,62,Teresa,Garcia,122
+56,Hagamos Nuestro Propio Negocio Adultos,H,Noelia,Arias,62,Amparo,Mendoza,12
+56,Hagamos Nuestro Propio Negocio Adultos,H,Noelia,Arias,62,Blanca,Alvarez,240
+58,Futbol Adolescentes (13-16 anos),H,UCIMED,UCIMED,70,Yasser,Perez,103
+58,Futbol Adolescentes (13-16 anos),H,UCIMED,UCIMED,70,Jesser,Prado,206
+58,Futbol Adolescentes (13-16 anos),H,UCIMED,UCIMED,70,Braudy,Castro,146
+58,Futbol Adolescentes (13-16 anos),H,UCIMED,UCIMED,70,Erick,Zamora,231
+58,Futbol Adolescentes (13-16 anos),H,UCIMED,UCIMED,70,Harrinton,Yesca Guerrero,254
+58,Futbol Adolescentes (13-16 anos),H,UCIMED,UCIMED,70,Anderson,Quesada,63
+59,Jiu-Jitsu Avanzado B (7-20 anos),H,UCIMED,UCIMED,70,Paola,Perez,98
+59,Jiu-Jitsu Avanzado B (7-20 anos),H,UCIMED,UCIMED,70,Bryan,Montes,136
+59,Jiu-Jitsu Avanzado B (7-20 anos),H,UCIMED,UCIMED,70,Rafael Antonio,Ruiz,95
+59,Jiu-Jitsu Avanzado B (7-20 anos),H,UCIMED,UCIMED,70,Jairo,Navarro,174
+59,Jiu-Jitsu Avanzado B (7-20 anos),H,UCIMED,UCIMED,70,Jefry,Perez,207
+59,Jiu-Jitsu Avanzado B (7-20 anos),H,UCIMED,UCIMED,70,Roswell,Chaves,258
+60,Ingles 8vo y 9no ano,H,Mariela,Ching,63,Yasser,Perez,103
+60,Ingles 8vo y 9no ano,H,Mariela,Ching,63,Sharon,Fonseca,119
+60,Ingles 8vo y 9no ano,H,Mariela,Ching,63,Anthony,PerezDiaz,241
+60,Ingles 8vo y 9no ano,H,Mariela,Ching,63,Lener,Perez,216
+60,Ingles 8vo y 9no ano,H,Mariela,Ching,63,Nikole,Leon,94
+60,Ingles 8vo y 9no ano,H,Mariela,Ching,63,Jerson,Gonzalez,248
+60,Ingles 8vo y 9no ano,H,Mariela,Ching,63,Michelle,Chavarria Vega,60
+60,Ingles 8vo y 9no ano,H,Mariela,Ching,63,Abigail,Chavarria Ovares,172
+60,Ingles 8vo y 9no ano,H,Mariela,Ching,63,Caleb,Mora,196
+61,Mate 2do grado,H,Melissa,Rios,64,Jefferson,Alvarez,137
+61,Mate 2do grado,H,Melissa,Rios,64,Pamela,Umana,102
+61,Mate 2do grado,H,Melissa,Rios,64,Ronny,Miranda,112
+61,Mate 2do grado,H,Melissa,Rios,64,Tamara,Elizondo,100
+61,Mate 2do grado,H,Melissa,Rios,64,Isaac,Acevedo,238
+61,Mate 2do grado,H,Melissa,Rios,64,Dayana,Jarquin,177
+61,Mate 2do grado,H,Melissa,Rios,64,Kimberly,Zamora,187
+62,Duolingo Adultos,H,Ana,Rojas,15,Julia,Andrade,70
+62,Duolingo Adultos,H,Ana,Rojas,15,Amparo,Mendoza,12
+62,Duolingo Adultos,H,Ana,Rojas,15,Maria del Carmen,Villareal,190
+62,Duolingo Adultos,H,Ana,Rojas,15,Imna,Mondoy,134
+63,Ingles 4to grado A,H,Ariana,Chacon,16,Isabella,Baldizon,189
+63,Ingles 4to grado A,H,Ariana,Chacon,16,Anderson,Oconitrillo,203
+63,Ingles 4to grado A,H,Ariana,Chacon,16,Jimena,Calvo,132
+63,Ingles 4to grado A,H,Ariana,Chacon,16,Kenneth,Perez,45
+63,Ingles 4to grado A,H,Ariana,Chacon,16,Josue,Chaves,23
+63,Ingles 4to grado A,H,Ariana,Chacon,16,Estrella,Lemuz,52
+63,Ingles 4to grado A,H,Ariana,Chacon,16,Andres,Mora,145
+64,Zumba Adultos,M,Carina,Langone,55,Bianca,Fonseca,200
+64,Zumba Adultos,M,Carina,Langone,55,Merida,De la O,61
+64,Zumba Adultos,M,Carina,Langone,55,Maria,Estrada,192
+64,Zumba Adultos,M,Carina,Langone,55,Karen,Perez,243
+64,Zumba Adultos,M,Carina,Langone,55,Karina,Osorno,219
+64,Zumba Adultos,M,Carina,Langone,55,Pamela,Baltodano,160
+64,Zumba Adultos,M,Carina,Langone,55,Karina,Diaz,133
+64,Zumba Adultos,M,Carina,Langone,55,Amparo,Mendoza,12
+64,Zumba Adultos,M,Carina,Langone,55,Yorlene,Morales,96
+64,Zumba Adultos,M,Carina,Langone,55,Yahaira,Baltodano,252
+64,Zumba Adultos,M,Carina,Langone,55,Argerie,Cedeno,256
+64,Zumba Adultos,M,Carina,Langone,55,Maria Digna,Bermudez,259
+64,Zumba Adultos,M,Carina,Langone,55,Sherry,Chaves,260
+64,Zumba Adultos,M,Carina,Langone,55,Belkis,Narvaez,262
+64,Zumba Adultos,M,Carina,Langone,55,Seylin,Urena,264
+65,Zumba Ninos (8-12 anos),H,Claudia,Granados,19,Allison,Arguedas,29
+65,Zumba Ninos (8-12 anos),H,Claudia,Granados,19,Kristel,Vanegas,128
+65,Zumba Ninos (8-12 anos),H,Claudia,Granados,19,Tabata,Mora,105
+65,Zumba Ninos (8-12 anos),H,Claudia,Granados,19,Kerly,Romero,127
+65,Zumba Ninos (8-12 anos),H,Claudia,Granados,19,Genesis,Perez,217
+65,Zumba Ninos (8-12 anos),H,Claudia,Granados,19,Joshua,Perez,54
+65,Zumba Ninos (8-12 anos),H,Claudia,Granados,19,Genesis,Garcia,15
+65,Zumba Ninos (8-12 anos),H,Claudia,Granados,19,Bayoleth,Lopez,59
+66,Mate 7mo Ano B,H,Isabel,Sanchez,39,Jefferson,Obando,34
+66,Mate 7mo Ano B,H,Isabel,Sanchez,39,Elieth,Oporta,148
+66,Mate 7mo Ano B,H,Isabel,Sanchez,39,Erick,Zamora,231
+66,Mate 7mo Ano B,H,Isabel,Sanchez,39,Cindy,Barboza,218
+66,Mate 7mo Ano B,H,Isabel,Sanchez,39,Naydelin,Rueda,101
+67,Tutorias 9no ano,H,Melissa,Rios,64,Lener,Perez,216
+67,Tutorias 9no ano,H,Melissa,Rios,64,Pamela,Baltodano,160
+67,Tutorias 9no ano,H,Melissa,Rios,64,Caleb,Mora,196
+68,Computo 5to y 6to grado A,H,Gabriel,Soto,33,Kiara,Angulo Velasquez,194
+68,Computo 5to y 6to grado A,H,Gabriel,Soto,33,Angelina,Miranda,185
+68,Computo 5to y 6to grado A,H,Gabriel,Soto,33,Naomi,Castillo,159
+68,Computo 5to y 6to grado A,H,Gabriel,Soto,33,Jeylin,Altamirano,13
+68,Computo 5to y 6to grado A,H,Gabriel,Soto,33,Maria Alexandra,Gonzalez,121
+68,Computo 5to y 6to grado A,H,Gabriel,Soto,33,Jesser,Prado,206
+68,Computo 5to y 6to grado A,H,Gabriel,Soto,33,Paola,Perez,98
+68,Computo 5to y 6to grado A,H,Gabriel,Soto,33,Tamara,Uma�a,110
+68,Computo 5to y 6to grado A,H,Gabriel,Soto,33,Rafael Antonio,Ruiz,95
+69,Ingles Adultos B,H,Ana,Rojas,15,Bianca,Fonseca,200
+69,Ingles Adultos B,H,Ana,Rojas,15,Dinarte,Migdalia,235
+69,Ingles Adultos B,H,Ana,Rojas,15,Amparo,Mendoza,12
+69,Ingles Adultos B,H,Ana,Rojas,15,Maria del Carmen,Villareal,190
+69,Ingles Adultos B,H,Ana,Rojas,15,Karina,Diaz,133
+69,Ingles Adultos B,H,Ana,Rojas,15,Imna,Mondoy,134
+69,Ingles Adultos B,H,Ana,Rojas,15,Julia,Andrade,70
+70,Ingles Kinder,F,Ana,Rojas,15,Bryan,Altamirano,167
+70,Ingles Kinder,F,Ana,Rojas,15,Christopher,Aburto,141
+70,Ingles Kinder,F,Ana,Rojas,15,Hanna,Medina,173
+70,Ingles Kinder,F,Ana,Rojas,15,Julian,Anchia,208
+70,Ingles Kinder,F,Ana,Rojas,15,Santiago,Zuniga,140
+70,Ingles Kinder,F,Ana,Rojas,15,Andrew,Zuniga,228
+70,Ingles Kinder,F,Ana,Rojas,15,Maria Fernanda,Ruiz,212
+70,Ingles Kinder,F,Ana,Rojas,15,Bridgit,Rojas,168
+70,Ingles Kinder,F,Ana,Rojas,15,Yerick,Vanegas,84
+70,Ingles Kinder,F,Ana,Rojas,15,Leidy,Vargas,125
+71,Mate 3ero grado B,F,Erick,Padilla,23,Kerly,Romero,127
+71,Mate 3ero grado B,F,Erick,Padilla,23,Allison,Arguedas,29
+71,Mate 3ero grado B,F,Erick,Padilla,23,Deikel,Davila,158
+71,Mate 3ero grado B,F,Erick,Padilla,23,Bayoleth,Lopez,59
+71,Mate 3ero grado B,F,Erick,Padilla,23,Isabel,Rodriguez,161
+71,Mate 3ero grado B,F,Erick,Padilla,23,Gari,Acevedo,26
+71,Mate 3ero grado B,F,Erick,Padilla,23,Lissi,Ortega,229
+72,Computo por medio del Juego B (8-12 anos),F,Daniel,Hernandez,65,Jefferson,Alvarez,137
+72,Computo por medio del Juego B (8-12 anos),F,Daniel,Hernandez,65,Justin,Anchia,165
+72,Computo por medio del Juego B (8-12 anos),F,Daniel,Hernandez,65,Ronny,Miranda,112
+72,Computo por medio del Juego B (8-12 anos),F,Daniel,Hernandez,65,Justin,Obando,44
+72,Computo por medio del Juego B (8-12 anos),F,Daniel,Hernandez,65,Angie,Perez,11
+72,Computo por medio del Juego B (8-12 anos),F,Daniel,Hernandez,65,Yael,Cerdas,92
+72,Computo por medio del Juego B (8-12 anos),F,Daniel,Hernandez,65,Harrinton,Yesca Guerrero,254
+72,Computo por medio del Juego B (8-12 anos),F,Daniel,Hernandez,65,Freydder,Rocha,72
+72,Computo por medio del Juego B (8-12 anos),F,Daniel,Hernandez,65,Tamara,Elizondo,100
+73,Tutoria Individual Prof Giovanna,F,Giovanna,Bettoni,35,Benjamin,Canales,151
+74,Futbol Primaria B (8-12 anos),F,UCIMED,UCIMED,70,Lissclay,Perez,214
+74,Futbol Primaria B (8-12 anos),F,UCIMED,UCIMED,70,Anthony,Perez-Pequeno,209
+74,Futbol Primaria B (8-12 anos),F,UCIMED,UCIMED,70,Jefferson,Flores,24
+74,Futbol Primaria B (8-12 anos),F,UCIMED,UCIMED,70,Jason,Vanegas,186
+74,Futbol Primaria B (8-12 anos),F,UCIMED,UCIMED,70,Leonardo,Medina,67
+74,Futbol Primaria B (8-12 anos),F,UCIMED,UCIMED,70,Jairo,Navarro,174
+74,Futbol Primaria B (8-12 anos),F,UCIMED,UCIMED,70,Stanley,Garcia,251
+74,Futbol Primaria B (8-12 anos),F,UCIMED,UCIMED,70,Olga,Sequeira,89
+74,Futbol Primaria B (8-12 anos),F,UCIMED,UCIMED,70,Brandon,Rayo,129
+74,Futbol Primaria B (8-12 anos),F,UCIMED,UCIMED,70,Irvin,Rayo,225
+74,Futbol Primaria B (8-12 anos),F,UCIMED,UCIMED,70,Marvin,Zamora,19
+74,Futbol Primaria B (8-12 anos),F,UCIMED,UCIMED,70,Andres,Mora,145
+74,Futbol Primaria B (8-12 anos),F,UCIMED,UCIMED,70,Jose,Serrano,166
+75,LESCO B,F,UCIMED,UCIMED,70,Bryan,Montes,136
+76,Tutorias 4to grado A,F,UCIMED,UCIMED,70,Jimena,Calvo,132
+76,Tutorias 4to grado A,F,UCIMED,UCIMED,70,Josue,Chaves,23
+76,Tutorias 4to grado A,F,UCIMED,UCIMED,70,Virginia,Flores,9
+77,Duolingo Primaria (8-12 anos),F,Ana,Rojas,15,Lissclay,Perez,214
+77,Duolingo Primaria (8-12 anos),F,Ana,Rojas,15,Anthony,Perez-Pequeno,209
+77,Duolingo Primaria (8-12 anos),F,Ana,Rojas,15,Jefferson,Flores,24
+77,Duolingo Primaria (8-12 anos),F,Ana,Rojas,15,Anthony,Anchia,246
+77,Duolingo Primaria (8-12 anos),F,Ana,Rojas,15,Yareydi,Angulo Velasquez,116
+77,Duolingo Primaria (8-12 anos),F,Ana,Rojas,15,Kenneth,Perez,45
+77,Duolingo Primaria (8-12 anos),F,Ana,Rojas,15,Estrella,Lemuz,52
+77,Duolingo Primaria (8-12 anos),F,Ana,Rojas,15,Neihtan,Campos,191
+77,Duolingo Primaria (8-12 anos),F,Ana,Rojas,15,Olga,Sequeira,89
+77,Duolingo Primaria (8-12 anos),F,Ana,Rojas,15,Breynin,Osmani,171
+78,Yoga Primaria (8-12 anos),F,Fanny,Vargas,29,Genesis,Perez,217
+78,Yoga Primaria (8-12 anos),F,Fanny,Vargas,29,Samantha,Santamaria,117
+78,Yoga Primaria (8-12 anos),F,Fanny,Vargas,29,Wendy,Gutierrez,31
+78,Yoga Primaria (8-12 anos),F,Fanny,Vargas,29,Isabella,Baldizon,189
+78,Yoga Primaria (8-12 anos),F,Fanny,Vargas,29,Natalia,Ruiz,230
+78,Yoga Primaria (8-12 anos),F,Fanny,Vargas,29,Keychel,Scott,37
+78,Yoga Primaria (8-12 anos),F,Fanny,Vargas,29,Tabata,Mora,105
+78,Yoga Primaria (8-12 anos),F,Fanny,Vargas,29,Irvin,Rayo,225
+78,Yoga Primaria (8-12 anos),F,Fanny,Vargas,29,Marvin,Zamora,19
+78,Yoga Primaria (8-12 anos),F,Fanny,Vargas,29,Kimberly,Zamora,187
+78,Yoga Primaria (8-12 anos),F,Fanny,Vargas,29,Ronny,Miranda,112
+78,Yoga Primaria (8-12 anos),F,Fanny,Vargas,29,Dayana,Alvarez,71
+79,Mate 4to grado A,S,Daniel,Siles,20,Juliana,Perez,18
+79,Mate 4to grado A,S,Daniel,Siles,20,Vivian,Magally,245
+79,Mate 4to grado A,S,Daniel,Siles,20,Yareydi,Angulo Velasquez,116
+79,Mate 4to grado A,S,Daniel,Siles,20,Evony,Jarquin,205
+79,Mate 4to grado A,S,Daniel,Siles,20,Virginia,Flores,9
+79,Mate 4to grado A,S,Daniel,Siles,20,Vivian,Murillo,114
+80,Lectoescritura Ninos (6-12 anos),S,Adriana,Badilla,10,Eber,Canales,56
+80,Lectoescritura Ninos (6-12 anos),S,Adriana,Badilla,10,Genesis,Perez,217
+80,Lectoescritura Ninos (6-12 anos),S,Adriana,Badilla,10,Kerly,Romero,127
+80,Lectoescritura Ninos (6-12 anos),S,Adriana,Badilla,10,Jonathan,Cermeno,175
+80,Lectoescritura Ninos (6-12 anos),S,Adriana,Badilla,10,Jefferson,Alvarez,137
+80,Lectoescritura Ninos (6-12 anos),S,Adriana,Badilla,10,Jeylin,Altamirano,13
+80,Lectoescritura Ninos (6-12 anos),S,Adriana,Badilla,10,Briana,Solis,74
+80,Lectoescritura Ninos (6-12 anos),S,Adriana,Badilla,10,Katherina,Berrios,164
+80,Lectoescritura Ninos (6-12 anos),S,Adriana,Badilla,10,Yomaira,Peinado,66
+80,Lectoescritura Ninos (6-12 anos),S,Adriana,Badilla,10,Jhonefe,Lopez,130
+80,Lectoescritura Ninos (6-12 anos),S,Adriana,Badilla,10,Justin,Anchia,165
+80,Lectoescritura Ninos (6-12 anos),S,Adriana,Badilla,10,Pamela,Umana,102
+80,Lectoescritura Ninos (6-12 anos),S,Adriana,Badilla,10,Ronny,Miranda,112
+80,Lectoescritura Ninos (6-12 anos),S,Adriana,Badilla,10,Deikel,Davila,158
+80,Lectoescritura Ninos (6-12 anos),S,Adriana,Badilla,10,Angelina,Miranda,185
+81,Tutorias 8vo ano,S,Esteban,Artavia,24,Sharon,Fonseca,119
+81,Tutorias 8vo ano,S,Esteban,Artavia,24,Anthony,PerezDiaz,241
+81,Tutorias 8vo ano,S,Esteban,Artavia,24,Nicole,Perez,104
+81,Tutorias 8vo ano,S,Esteban,Artavia,24,Brandon,Perez,236
+81,Tutorias 8vo ano,S,Esteban,Artavia,24,Gabriela,Vallecillos,156
+81,Tutorias 8vo ano,S,Esteban,Artavia,24,Genesis,Chaves,202
+82,Tutorias 10mo ano,S,Didier,Mendez,22,Gabriela,Castellon,181
+83,Cocina Adultos,S,Marcos,Jimenez,50,Maria Elizabeth,Bermudez,232
+83,Cocina Adultos,S,Marcos,Jimenez,50,Rosario,Zarate,182
+83,Cocina Adultos,S,Marcos,Jimenez,50,Bianca,Fonseca,200
+83,Cocina Adultos,S,Marcos,Jimenez,50,Merida,De la O,61
+83,Cocina Adultos,S,Marcos,Jimenez,50,Dinarte,Migdalia,235
+83,Cocina Adultos,S,Marcos,Jimenez,50,Blanca,Alvarez,240
+83,Cocina Adultos,S,Marcos,Jimenez,50,Doris,Martinez,25
+83,Cocina Adultos,S,Marcos,Jimenez,50,Nidia,Mora,188
+83,Cocina Adultos,S,Marcos,Jimenez,50,Tirza,Martinez,239
+83,Cocina Adultos,S,Marcos,Jimenez,50,Marta,Alvarez Sanchez,242
+83,Cocina Adultos,S,Marcos,Jimenez,50,Karen,Perez,243
+83,Cocina Adultos,S,Marcos,Jimenez,50,Maria,Estrada,192
+83,Cocina Adultos,S,Marcos,Jimenez,50,Roxana,Martinez,65
+83,Cocina Adultos,S,Marcos,Jimenez,50,Kattia,Navarro,21
+83,Cocina Adultos,S,Marcos,Jimenez,50,Olga,Quiros,111
+84,Aprender Jugando Primaria (7-9 anos),S,UCIMED,UCIMED,70,Natalia,Ruiz,230
+84,Aprender Jugando Primaria (7-9 anos),S,UCIMED,UCIMED,70,Bryan,Lopez,169
+84,Aprender Jugando Primaria (7-9 anos),S,UCIMED,UCIMED,70,Harrinton,Yesca Guerrero,254
+84,Aprender Jugando Primaria (7-9 anos),S,UCIMED,UCIMED,70,Tamara,Elizondo,100
+84,Aprender Jugando Primaria (7-9 anos),S,UCIMED,UCIMED,70,Irvin,Rayo,225
+84,Aprender Jugando Primaria (7-9 anos),S,UCIMED,UCIMED,70,Dayana,Jarquin,177
+84,Aprender Jugando Primaria (7-9 anos),S,UCIMED,UCIMED,70,Marvin,Zamora,19
+84,Aprender Jugando Primaria (7-9 anos),S,UCIMED,UCIMED,70,Jose,Serrano,166
+85,Aprender Jugando Pre Adolescentes (10-12 anos),S,UCIMED,UCIMED,70,Aston,Porras,199
+86,Ingles 6to grado,S,Valeria,Villalobos,69,Angelina,Miranda,185
+86,Ingles 6to grado,S,Valeria,Villalobos,69,Kiara,Angulo Velasquez,194
+86,Ingles 6to grado,S,Valeria,Villalobos,69,Rafael Antonio,Ruiz,95
+86,Ingles 6to grado,S,Valeria,Villalobos,69,Alberth,Abarca,197
+86,Ingles 6to grado,S,Valeria,Villalobos,69,Valery,Maravilla,113
+86,Ingles 6to grado,S,Valeria,Villalobos,69,Naomi,Castillo,159
+86,Ingles 6to grado,S,Valeria,Villalobos,69,Stephanie,Diaz,69
+86,Ingles 6to grado,S,Valeria,Villalobos,69,Kevin,Sabayos,163
+86,Ingles 6to grado,S,Valeria,Villalobos,69,Sebastian,Bejarano,115
+87,Mate 7mo ano A,S,Adriana,Avendano,66,Cristian,Gutierrez,49
+87,Mate 7mo ano A,S,Adriana,Avendano,66,Ashley,Anchia,244
+88,Mate 8vo Ano,S,Alejandro,Masis,11,Anthony,PerezDiaz,241
+88,Mate 8vo Ano,S,Alejandro,Masis,11,Denilson,Medina,48
+89,Tutorias 5to y 6to grado,S,Laura,Sanchez,47,Jesser,Prado,206
+89,Tutorias 5to y 6to grado,S,Laura,Sanchez,47,Paola,Perez,98
+89,Tutorias 5to y 6to grado,S,Laura,Sanchez,47,Keylin,Perez,43
+89,Tutorias 5to y 6to grado,S,Laura,Sanchez,47,Darian,Miranda,73
+89,Tutorias 5to y 6to grado,S,Laura,Sanchez,47,Jeylin,Altamirano,13
+89,Tutorias 5to y 6to grado,S,Laura,Sanchez,47,Isaac,Martinez,14
+89,Tutorias 5to y 6to grado,S,Laura,Sanchez,47,Dayana,Navarro,176
+89,Tutorias 5to y 6to grado,S,Laura,Sanchez,47,Jason,Vanegas,186
+89,Tutorias 5to y 6to grado,S,Laura,Sanchez,47,Leonardo,Medina,67
+90,Mate 9no Ano,S,Gonzalo,Madrigal,37,Lener,Perez,216
+90,Mate 9no Ano,S,Gonzalo,Madrigal,37,Nikole,Leon,94
+90,Mate 9no Ano,S,Gonzalo,Madrigal,37,Pamela,Baltodano,160
+90,Mate 9no Ano,S,Gonzalo,Madrigal,37,Brittany,Jarquin,198
+90,Mate 9no Ano,S,Gonzalo,Madrigal,37,Caleb,Mora,196
+91,Cuentos y Valores Ninos (5-8 anos),S,Patricia,Azofeifa,73,Briana,Solis,74
+91,Cuentos y Valores Ninos (5-8 anos),S,Patricia,Azofeifa,73,Pamela,Umana,102
+91,Cuentos y Valores Ninos (5-8 anos),S,Patricia,Azofeifa,73,Deikel,Davila,158
+91,Cuentos y Valores Ninos (5-8 anos),S,Patricia,Azofeifa,73,Natalia,Ruiz,230
+91,Cuentos y Valores Ninos (5-8 anos),S,Patricia,Azofeifa,73,Dayana,Alvarez,71
+91,Cuentos y Valores Ninos (5-8 anos),S,Patricia,Azofeifa,73,Junior,Carvajal,183
+91,Cuentos y Valores Ninos (5-8 anos),S,Patricia,Azofeifa,73,Keiry,Madrigal,17
+91,Cuentos y Valores Ninos (5-8 anos),S,Patricia,Azofeifa,73,Britny,Umana,237
+91,Cuentos y Valores Ninos (5-8 anos),S,Patricia,Azofeifa,73,Marvin,Zamora,19
+91,Cuentos y Valores Ninos (5-8 anos),S,Patricia,Azofeifa,73,Kimberly,Zamora,187
+91,Cuentos y Valores Ninos (5-8 anos),S,Patricia,Azofeifa,73,Irvin,Rayo,225
+91,Cuentos y Valores Ninos (5-8 anos),S,Patricia,Azofeifa,73,Jefry,Perez,207
+91,Cuentos y Valores Ninos (5-8 anos),S,Patricia,Azofeifa,73,Keylor,Chavez,257
+91,Cuentos y Valores Ninos (5-8 anos),S,Patricia,Azofeifa,73,Jose,Serrano,166
+92,Ingles 4to grado B,S,Daniel,Siles,20,Juliana,Perez,18
+92,Ingles 4to grado B,S,Daniel,Siles,20,Katherina,Berrios,164
+92,Ingles 4to grado B,S,Daniel,Siles,20,Vivian,Magally,245
+92,Ingles 4to grado B,S,Daniel,Siles,20,Yareydi,Angulo Velasquez,116
+92,Ingles 4to grado B,S,Daniel,Siles,20,Evony,Jarquin,205
+92,Ingles 4to grado B,S,Daniel,Siles,20,Virginia,Flores,9
+92,Ingles 4to grado B,S,Daniel,Siles,20,Vivian,Murillo,114
+93,Ingles 1er grado,S,Gina,Solari,34,Benjamin,Canales,151
+93,Ingles 1er grado,S,Gina,Solari,34,Eber,Canales,56
+93,Ingles 1er grado,S,Gina,Solari,34,Heidy,Mairena,7
+93,Ingles 1er grado,S,Gina,Solari,34,Jonathan,Cermeno,175
+93,Ingles 1er grado,S,Gina,Solari,34,Wendy,Gutierrez,31
+93,Ingles 1er grado,S,Gina,Solari,34,Natalia,Ruiz,230
+93,Ingles 1er grado,S,Gina,Solari,34,Dayana,Alvarez,71
+93,Ingles 1er grado,S,Gina,Solari,34,Junior,Carvajal,183
+94,Computo por medio del Juego A (8-12 anos),S,Otto,Gatjens,67,Kerly,Romero,127
+94,Computo por medio del Juego A (8-12 anos),S,Otto,Gatjens,67,Lissclay,Perez,214
+94,Computo por medio del Juego A (8-12 anos),S,Otto,Gatjens,67,Anthony,Perez-Pequeno,209
+94,Computo por medio del Juego A (8-12 anos),S,Otto,Gatjens,67,Juliana,Perez,18
+94,Computo por medio del Juego A (8-12 anos),S,Otto,Gatjens,67,Jefferson,Flores,24
+94,Computo por medio del Juego A (8-12 anos),S,Otto,Gatjens,67,Darian,Miranda,73
+94,Computo por medio del Juego A (8-12 anos),S,Otto,Gatjens,67,Joshua,Perez,54
+94,Computo por medio del Juego A (8-12 anos),S,Otto,Gatjens,67,Briana,Solis,74
+94,Computo por medio del Juego A (8-12 anos),S,Otto,Gatjens,67,Katherina,Berrios,164
+94,Computo por medio del Juego A (8-12 anos),S,Otto,Gatjens,67,Leonardo,Medina,67
+94,Computo por medio del Juego A (8-12 anos),S,Otto,Gatjens,67,Raquel,Montes,201
+95,Mate 10mo Ano,S,Adriana,Avendano,66,Karina,Miranda,147
+95,Mate 10mo Ano,S,Adriana,Avendano,66,Brittany,Solis,123
+95,Mate 10mo Ano,S,Adriana,Avendano,66,Gabriela,Castellon,181
+95,Mate 10mo Ano,S,Adriana,Avendano,66,Anderson,Quesada,63
+96,LESCO A,W,Valeria,Villalobos Lesco,68,Bryan,Montes,136
+97,Terapia de Lenguaje,W,Mariana,Cejas,71,Pamela,Umana,102
+97,Terapia de Lenguaje,W,Mariana,Cejas,71,Bryan,Lopez,169
+97,Terapia de Lenguaje,W,Mariana,Cejas,71,Pamela,Umana,102
+97,Terapia de Lenguaje,W,Mariana,Cejas,71,Bryan,Lopez,169
+98,La sexualidad y los adolescentes,S,Silvia,Quiros,72,Sharon,Fonseca,119
+98,La sexualidad y los adolescentes,S,Silvia,Quiros,72,Anthony,PerezDiaz,241
+98,La sexualidad y los adolescentes,S,Silvia,Quiros,72,Nicole,Perez,104
+98,La sexualidad y los adolescentes,S,Silvia,Quiros,72,Brandon,Perez,236
+98,La sexualidad y los adolescentes,S,Silvia,Quiros,72,Pamela,Baltodano,160
+98,La sexualidad y los adolescentes,S,Silvia,Quiros,72,Genesis,Chaves,202
+98,La sexualidad y los adolescentes,S,Silvia,Quiros,72,Elieth,Oporta,148
+98,La sexualidad y los adolescentes,S,Silvia,Quiros,72,Braudy,Castro,146
+98,La sexualidad y los adolescentes,S,Silvia,Quiros,72,Cindy,Barboza,218
+99,Cafecito con Mamá,W,Fiorella,Cortez,77,Rosario,Zarate,182
+99,Cafecito con Mamá,W,Fiorella,Cortez,77,Dinarte,Migdalia,235
+99,Cafecito con Mamá,W,Fiorella,Cortez,77,Nidia,Mora,188
+99,Cafecito con Mamá,W,Fiorella,Cortez,77,Maria,Estrada,192
+99,Cafecito con Mamá,W,Fiorella,Cortez,77,Julia,Andrade,70
+99,Cafecito con Mamá,W,Fiorella,Cortez,77,Fanny,Porras,57
+99,Cafecito con Mamá,W,Fiorella,Cortez,77,Karen,Perez,243
+99,Cafecito con Mamá,W,Fiorella,Cortez,77,Cindy,Murillo,120
+99,Cafecito con Mamá,W,Fiorella,Cortez,77,Kattia,Navarro,21
+99,Cafecito con Mamá,W,Fiorella,Cortez,77,Teresa,Garcia,122
+99,Cafecito con Mamá,W,Fiorella,Cortez,77,Soveida,Reyes,249
+99,Cafecito con Mamá,W,Fiorella,Cortez,77,Yahaira,Baltodano,252
+99,Cafecito con Mamá,W,Fiorella,Cortez,77,Maria Digna,Bermudez,259
+99,Cafecito con Mamá,W,Fiorella,Cortez,77,Amparo,Mendoza,12
+99,Cafecito con Mamá,W,Fiorella,Cortez,77,Blanca,Alvarez,240
+100,Hablemos entre Adolescentes (12-14 anos),F,UNIBE,UNIBE,76,Erick,Zamora,231
+100,Hablemos entre Adolescentes (12-14 anos),F,UNIBE,UNIBE,76,Cindy,Barboza,218
+100,Hablemos entre Adolescentes (12-14 anos),F,UNIBE,UNIBE,76,Angelina,Miranda,185
+100,Hablemos entre Adolescentes (12-14 anos),F,UNIBE,UNIBE,76,Daniela,Rayo,58
+100,Hablemos entre Adolescentes (12-14 anos),F,UNIBE,UNIBE,76,Alexander,Perez,35
+101,Hablemos entre Adolescentes (15-18 anos),F,UNIBE,UNIBE,76,Sharon,Fonseca,119
+101,Hablemos entre Adolescentes (15-18 anos),F,UNIBE,UNIBE,76,Anthony,PerezDiaz,241
+101,Hablemos entre Adolescentes (15-18 anos),F,UNIBE,UNIBE,76,Nicole,Perez,104
+101,Hablemos entre Adolescentes (15-18 anos),F,UNIBE,UNIBE,76,Brandon,Perez,236
+101,Hablemos entre Adolescentes (15-18 anos),F,UNIBE,UNIBE,76,Pamela,Baltodano,160
+101,Hablemos entre Adolescentes (15-18 anos),F,UNIBE,UNIBE,76,Genesis,Chaves,202
+101,Hablemos entre Adolescentes (15-18 anos),F,UNIBE,UNIBE,76,Braudy,Castro,146
+101,Hablemos entre Adolescentes (15-18 anos),F,UNIBE,UNIBE,76,Alison,Sanchez,255
+101,Hablemos entre Adolescentes (15-18 anos),F,UNIBE,UNIBE,76,Anderson,Quesada,63
+101,Hablemos entre Adolescentes (15-18 anos),F,UNIBE,UNIBE,76,Sebastian,Marin,99
+101,Hablemos entre Adolescentes (15-18 anos),F,UNIBE,UNIBE,76,Montserrat,Marin,263
+103,Tutorias 6to grado B,H,Alejandra,Moreira,61,Rafael Antonio,Ruiz,95
+103,Tutorias 6to grado B,H,Alejandra,Moreira,61,Angelina,Miranda,185
+103,Tutorias 6to grado B,H,Alejandra,Moreira,61,Juan,Rugama,41
+103,Tutorias 6to grado B,H,Alejandra,Moreira,61,Sebastian,Bejarano,115
+104,test,F,Esteban,Artavia,24,Deleted,"1",2
