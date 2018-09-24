@@ -12,6 +12,32 @@ app = Flask(__name__)
 app.config.from_object(Config)
 
 
+class tablaasistencia(Table):
+    courseid = Col('courseid')
+    coursename = Col('coursname')
+    dayoftheweek = Col('dayoftheweek')
+    teachername = Col('teachername')
+    teacherlastname = Col('teacherlastname')
+    teacherid = Col('teacherid')
+    studentname = Col('studentname')
+    studentlastname = Col('studentlastname')
+    studentid = Col('studentid')
+    weekatt1 = Col('weekatt1')
+    weekatt2 = Col('weekatt2')
+    weekatt3 = Col('weekatt3')
+    weekatt4 = Col('weekatt4')
+    weekatt5 = Col('weekatt5')
+    weekatt6 = Col('weekatt6')
+    weekatt7 = Col('weekatt7')
+    weekatt8 = Col('weekatt8')
+    weekatt9 = Col('weekatt9')
+    weekatt10 = Col('weekatt10')
+    weekatt11 = Col('weekatt11')
+    weekatt12 = Col('weekatt12')
+    weekatt13 = Col('weekatt13')
+    weekatt14 = Col('weekatt14')
+    weekatt15 = Col('weekatt15')
+    classes = ['table', 'table-responsive', 'table-hover']
 
 @app.route('/NinosMatriculados', methods=['GET', 'POST'])
 def reporteNinosMatriculados():
@@ -230,34 +256,7 @@ def asistencia():
         return createRow
     DBcursor.rowfactory = makeDictFactory(DBcursor)
     listaninos = DBcursor.fetchall()
-    class ItemTable(Table):
-        courseid = Col('courseid')
-        coursename = Col('coursname')
-        dayoftheweek = Col('dayoftheweek')
-        teachername = Col('teachername')
-        teacherlastname = Col('teacherlastname')
-        teacherid = Col('teacherid')
-        studentname = Col('studentname')
-        studentlastname = Col('studentlastname')
-        studentid = Col('studentid')
-        weekatt1 = Col('weekatt1')
-        weekatt2 = Col('weekatt2')
-        weekatt3 = Col('weekatt3')
-        weekatt4 = Col('weekatt4')
-        weekatt5 = Col('weekatt5')
-        weekatt6 = Col('weekatt6')
-        weekatt7 = Col('weekatt7')
-        weekatt8 = Col('weekatt8')
-        weekatt9 = Col('weekatt9')
-        weekatt10 = Col('weekatt10')
-        weekatt11 = Col('weekatt11')
-        weekatt12 = Col('weekatt12')
-        weekatt13 = Col('weekatt13')
-        weekatt14 = Col('weekatt14')
-        weekatt15 = Col('weekatt15')
-        classes = ['table', 'table-responsive', 'table-hover']
-    htmlninosmatriculados = ItemTable(listaninos)
-
+    htmlninosmatriculados = tablaasistencia(listaninos)
     return render_template('dynamictable.html', title='asistencia', data = htmlninosmatriculados )
 
 
