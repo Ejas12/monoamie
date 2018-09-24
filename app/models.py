@@ -1,3 +1,5 @@
+from app import db
+
 class clasedbasistencia(db.Model):
     entryid = db.Column(db.Integer, primary_key=True)
     attendanceid = db.Column(db.String(255), index=True, unique=False, nullable=False)
