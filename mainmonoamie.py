@@ -229,8 +229,6 @@ def login():
 def home():
     return render_template('home.html')
 
-@app.route('/asistencia', methods=['GET', 'POST'])
-def asistencia():
 
 
 
