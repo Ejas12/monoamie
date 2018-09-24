@@ -2,6 +2,7 @@ from flask import render_template
 from app import app
 from flask_mysqldb import MySQLdb
 from flask_table import table
+from flask_table import Table, Col, LinkCol
 from app.models import clasedbasistencia
 @app.route('/NinosMatriculados', methods=['GET', 'POST'])
 def reporteNinosMatriculados():
