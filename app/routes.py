@@ -1,6 +1,8 @@
 from flask import render_template
 from app import app
 from flask_mysqldb import MySQLdb
+from flask_table import table
+from app.models import clasedbasistencia
 @app.route('/NinosMatriculados', methods=['GET', 'POST'])
 def reporteNinosMatriculados():
 
@@ -181,7 +183,39 @@ def home():
     return render_template('home.html')
 
 
+@app.route('/fullschedulelist')
 
+def fullschedulelist():
+    searchquery = clasedbasistencia.query.all()
+    class ItemTable(table):
+        entryid = Col('Entry ID')
+        courseid = Col('Course ID')
+        coursename = Col('Course Name')
+        dayoftheweek = Col('Day of the week')
+        teacherfirstname = Col('First Name')
+        teacherlastname = Col('Last Name')
+        teacherid = Col('Teacher ID')
+        studentfirstname = Col('Student Name')
+        studentlastname = Col('Student Lastname')
+        studentid = Col('Student Id')
+        weekatt1 = Col('week 1')
+        weekatt2 = Col('week 2')
+        weekatt3 = Col('week 3')
+        weekatt4 = Col('week 4')
+        weekatt5 = Col('week 5')
+        weekatt6 = Col('week 6')
+        weekatt7 = Col('week 7')
+        weekatt8 = Col('week 8')
+        weekatt9 = Col('week 9')
+        weekatt10 = Col('week 10')
+        weekatt11 = Col('week 11')
+        weekatt12 = Col('week 12')
+        weekatt13 = Col('week 13')
+        weekatt14 = Col('week 14')
+        weekatt15 = Col('week 15')
+    foundkids = ItemTable(searchquery)
+    return render_template ('dynamictable.html', title='Asistencia', data=foundkids)
+    
 
 
 if __name__ == '__main__':
