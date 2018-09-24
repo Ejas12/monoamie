@@ -3,41 +3,52 @@ from config import Config
 from forms import Loginform
 from flask_mysqldb import MySQLdb
 from flask_table import Table, Col, LinkCol
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 
-sqlserverip = '172.31.36.62'
-sqlserveruser = 'liftingmonoami'
-sqlpass = 'LiftingAnonos2018'
-sqlattendanceserver = '127.0.0.1'
+
+
 app = Flask(__name__)
 app.config.from_object(Config)
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 
 
-class tablaasistencia(Table):
-    courseid = Col('courseid')
-    coursename = Col('coursname')
-    dayoftheweek = Col('dayoftheweek')
-    teachername = Col('teachername')
-    teacherlastname = Col('teacherlastname')
-    teacherid = Col('teacherid')
-    studentname = Col('studentname')
-    studentlastname = Col('studentlastname')
-    studentid = Col('studentid')
-    weekatt1 = Col('weekatt1')
-    weekatt2 = Col('weekatt2')
-    weekatt3 = Col('weekatt3')
-    weekatt4 = Col('weekatt4')
-    weekatt5 = Col('weekatt5')
-    weekatt6 = Col('weekatt6')
-    weekatt7 = Col('weekatt7')
-    weekatt8 = Col('weekatt8')
-    weekatt9 = Col('weekatt9')
-    weekatt10 = Col('weekatt10')
-    weekatt11 = Col('weekatt11')
-    weekatt12 = Col('weekatt12')
-    weekatt13 = Col('weekatt13')
-    weekatt14 = Col('weekatt14')
-    weekatt15 = Col('weekatt15')
-    classes = ['table', 'table-responsive', 'table-hover']
+from app import routes, models
+
+class clasedbasistencia(db.Model):
+    entryid = db.Column(db.Integer, primary_key=True)
+    attendanceid = db.Column(db.String(255), index=True, unique=False, nullable=False)
+    courseid = db.Column(db.String(255), index=True, unique=False, nullable=False)
+    coursename = db.Column(db.String(255), index=True, unique=False, nullable=False)
+    dayoftheweek = db.Column(db.String(255), index=True, unique=False, nullable=False)
+    teacherfirstname = db.Column(db.String(255), index=True, unique=False, nullable=False)
+    teacherlastname = db.Column(db.String(255), index=True, unique=False, nullable=False)
+    teacherid = db.Column(db.String(255), index=True, unique=False, nullable=False)
+    studentfirstname = db.Column(db.String(255), index=True, unique=False, nullable=False)
+    studentlastname = db.Column(db.String(255), index=True, unique=False, nullable=False)
+    studentid = db.Column(db.String(255), index=True, unique=False, nullable=False)
+    weekatt1 = db.Column(db.Boolean)
+    weekatt2 = db.Column(db.Boolean)
+    weekatt3 = db.Column(db.Boolean)
+    weekatt4 = db.Column(db.Boolean)
+    weekatt5 = db.Column(db.Boolean)
+    weekatt6 = db.Column(db.Boolean)
+    weekatt7 = db.Column(db.Boolean)
+    weekatt8 = db.Column(db.Boolean)
+    weekatt9 = db.Column(db.Boolean)
+    weekatt10 = db.Column(db.Boolean)
+    weekatt11 = db.Column(db.Boolean)
+    weekatt12 = db.Column(db.Boolean)
+    weekatt13 = db.Column(db.Boolean)
+    weekatt14 = db.Column(db.Boolean)
+    weekatt15 = db.Column(db.Boolean)
+    def __repr__(self):
+        return '<IDofrow {}>'.format(self.entryid)
+
+
+
+
 
 @app.route('/NinosMatriculados', methods=['GET', 'POST'])
 def reporteNinosMatriculados():
@@ -220,44 +231,6 @@ def home():
 
 @app.route('/asistencia', methods=['GET', 'POST'])
 def asistencia():
-
-    connectionobj = MySQLdb.connect(host=sqlattendanceserver, user=sqlserveruser, passwd=sqlpass, db='liftingasistencia')
-    DBcursor = connectionobj.cursor()
-    DBcursor.execute("""SELECT attendanceid,
-    courseid,
-    coursename,
-    dayoftheweek,
-    teachername,
-    teacherlastname,
-    teacherid,
-    studentname,
-    studentlastname,
-    studentid,
-    weekatt1,
-    weekatt2,
-    weekatt3,
-    weekatt4,
-    weekatt5,
-    weekatt6,
-    weekatt7,
-    weekatt8,
-    weekatt9,
-    weekatt10,
-    weekatt11,
-    weekatt12,
-    weekatt13, 
-    weekatt14,
-    weekatt15
-    from chicosyhorarios""")
-    def makeDictFactory(cursor):
-        columnNames = [d[0] for d in cursor.description]
-        def createRow(*args):
-            return dict(zip(columnNames, args))
-        return createRow
-    DBcursor.rowfactory = makeDictFactory(DBcursor)
-    listaninos = DBcursor.fetchall()
-    htmlninosmatriculados = tablaasistencia(listaninos)
-    return render_template('dynamictable.html', title='asistencia', data = htmlninosmatriculados )
 
 
 
