@@ -1,7 +1,6 @@
 from flask import render_template
 from app import app
 from flask_mysqldb import MySQLdb
-from flask_table import table
 from flask_table import Table, Col, LinkCol
 from app.models import clasedbasistencia
 @app.route('/NinosMatriculados', methods=['GET', 'POST'])
@@ -35,7 +34,7 @@ order by liftinghands.students.student_id;""")
         classes = ['table', 'table-responsive', 'table-hover']
 
     htmlninosmatriculados = ItemTable(listaninos)
-    return render_template('dynamictable.html', title='Lista Ninos Matriculados', data = htmlninosmatriculados )
+    return render_template('dynamictable.html', title='Lista Ninos Matriculados', data = htmlninosmatriculados)
 
 
 
@@ -188,7 +187,7 @@ def home():
 
 def fullschedulelist():
     searchquery = clasedbasistencia.query.all()
-    class ItemTable(table):
+    class ItemTable(Table):
         entryid = Col('Entry ID')
         courseid = Col('Course ID')
         coursename = Col('Course Name')
