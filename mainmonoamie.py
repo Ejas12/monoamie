@@ -88,7 +88,8 @@ def reportelistas():
     detallescurso.course_period_id
     FROM liftinghands.students  student
     join liftinghands.schedule schedule on student.student_id = schedule.student_id
-    join liftinghands.course_details detallescurso on schedule.course_id = detallescurso.course_id;
+    join liftinghands.course_details detallescurso on schedule.course_id = detallescurso.course_id
+    where detallescurso.cp_title like '%q2%';
     """)
     listaninos = DBcursor.fetchall()
     return render_template('tablelistadeclases.html', title='Reporte de alumnos para elaboracion de listas de clase', data=listaninos)
@@ -137,7 +138,7 @@ FROM liftinghands.students
 
 left  JOIN liftinghands.schedule ON liftinghands.schedule.student_id=liftinghands.students.student_id
 left join liftinghands.enroll_grade on liftinghands.enroll_grade.student_id=liftinghands.students.student_id
-where liftinghands.schedule.course_id is not  null and  liftinghands.students.first_name !='Deleted'
+where (liftinghands.schedule.course_id is not  null or liftinghands.schedule.course_period_id <=202) and  liftinghands.students.first_name !='Deleted'
 group by liftinghands.students.student_id
 order by liftinghands.students.student_id;
 """)
@@ -166,7 +167,7 @@ def listaprofes():
     left outer join liftinghands.course_details detallescurso on (detallescurso.teacher_id = profes.staff_id or detallescurso.secondary_teacher_id = profes.staff_id)
     join liftinghands.school_periods periodos on periodos.period_id = detallescurso.period_id
     join liftinghands.course_periods tabladias on tabladias.course_period_id = detallescurso.course_period_id
-    where profes.profile = 'Teacher' and detallescurso.cp_title like '%q3%'
+    where profes.profile = 'Teacher' and detallescurso.cp_title like '%q2%'
     order by detallescurso.course_period_id
     """)
     listaninos = DBcursor.fetchall()
