@@ -43,7 +43,7 @@ class tablaasistencia(Table):
 def reporteNinosMatriculados():
 
     connectionobj = MySQLdb.connect(host=sqlserverip, user=sqlserveruser, passwd=sqlpass, db='liftinghands', charset='utf8', use_unicode=True)
-    DBcursor = connectionobj.
+    DBcursor = connectionobj.cursor()
     DBcursor.execute("""
 SELECT liftinghands.students.first_name as 'Nombre',
 liftinghands.students.last_name as 'Apellido',
