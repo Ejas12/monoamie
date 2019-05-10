@@ -263,11 +263,18 @@ def asistencia():
 
 @app.route('/listabonita', methods=['GET'])
 def listabonita():
+    class ItemTable(Table):
+        Primer_Nombre = Col('Primer_Nombre')
+        Apellido = Col('Apellido')
+        Segundo_Apellido = Col('Segundo_Apellido')
+        Fecha_de_nacimiento = Col('Fecha_de_nacimiento')
+        Telefono_Directo = Col('Telefono_Directo')
+    
     connectionobj = MySQLdb.connect(host=sqlserverip, user=sqlserveruser, passwd=sqlpass, db='liftinghands', charset='utf8', use_unicode=True, cursorclass=MySQLdb.cursors.DictCursor)
     DBcursor = connectionobj.cursor()
     DBcursor.execute("""
     select 
-    studenttable.first_name as 'Primer Nombre',
+    studenttable.first_name as 'Primer_Nombre',
     studenttable.last_name as 'Apellido',
     studenttable.CUSTOM_10 as 'Segundo_Apellido',
     studenttable.birthdate as 'Fecha_de_nacimiento',
