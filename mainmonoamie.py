@@ -43,7 +43,7 @@ class tablaasistencia(Table):
 def reporteNinosMatriculados():
 
     connectionobj = MySQLdb.connect(host=sqlserverip, user=sqlserveruser, passwd=sqlpass, db='liftinghands', charset='utf8', use_unicode=True)
-    DBcursor = connectionobj.cursor()
+    DBcursor = connectionobj.
     DBcursor.execute("""
 SELECT liftinghands.students.first_name as 'Nombre',
 liftinghands.students.last_name as 'Apellido',
@@ -261,6 +261,27 @@ def asistencia():
     return render_template('dynamictable.html', title='asistencia', data = htmlninosmatriculados )
 
 
+@app.route('/listabonita', methos=['GET'])
+def listabonita():
+    connectionobj = MySQLdb.connect(host=sqlserverip, user=sqlserveruser, passwd=sqlpass, db='liftinghands', charset='utf8', use_unicode=True, cursorclass=DictCursor)
+    DBcursor = connectionobj.cursor()
+    DBcursor.execute("""
+    select 
+    studenttable.first_name as 'Primer Nombre'
+    studenttable.last_name as 'Apellido'
+    studenttable.CUSTOM_10 as 'Segundo Apellido'
+    studenttable.birthdate as 'Fecha de nacimiento'
+    studenttable.phone as 'Telefono Directo'
+
+    from liftinghands.students as studenttable
+    left join liftinghands.schedule schedule on studenttable.student_id=schedule.student_id
+    left join liftinghands.course_details coursedetails on schedule.course_period_id=coursedetails.course_period_id
+    where coursedetails.cp_title  like '%q2%'
+    group by studenttable.student_id
+    """)
+    listaninos = DBcursor.fetchall()
+    tableninos = ItemTable(items)
+    return render_template('dynamictable.html', title='ListaBonita', data =tableninos)
 
 
 if __name__ == '__main__':
