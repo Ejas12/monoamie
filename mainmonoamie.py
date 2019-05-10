@@ -286,7 +286,7 @@ def listabonita():
     group by studenttable.student_id;
     """)
     listaninos = DBcursor.fetchall()
-    tableninos = ItemTable(items)
+    tableninos = ItemTable(listaninos)
     return render_template('dynamictable.html', title='ListaBonita', data =tableninos)
 
 
