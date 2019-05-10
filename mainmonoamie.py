@@ -277,7 +277,7 @@ def listabonita():
     left join liftinghands.schedule schedule on studenttable.student_id=schedule.student_id
     left join liftinghands.course_details coursedetails on schedule.course_period_id=coursedetails.course_period_id
     where coursedetails.cp_title  like '%q2%'
-    group by studenttable.student_id
+    group by studenttable.student_id;
     """)
     listaninos = DBcursor.fetchall()
     tableninos = ItemTable(items)
