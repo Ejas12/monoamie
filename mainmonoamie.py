@@ -269,10 +269,9 @@ def listabonita():
     select 
     studenttable.first_name as 'Primer Nombre'
     studenttable.last_name as 'Apellido'
-    studenttable.CUSTOM_10 as 'Segundo Apellido'
-    studenttable.birthdate as 'Fecha de nacimiento'
-    studenttable.phone as 'Telefono Directo'
-
+    studenttable.CUSTOM_10 as 'Segundo_Apellido'
+    studenttable.birthdate as 'Fecha_de_nacimiento'
+    studenttable.phone as 'Telefono_Directo'
     from liftinghands.students as studenttable
     left join liftinghands.schedule schedule on studenttable.student_id=schedule.student_id
     left join liftinghands.course_details coursedetails on schedule.course_period_id=coursedetails.course_period_id
