@@ -261,7 +261,7 @@ def asistencia():
     return render_template('dynamictable.html', title='asistencia', data = htmlninosmatriculados )
 
 
-@app.route('/listabonita', methos=['GET'])
+@app.route('/listabonita', methods=['GET'])
 def listabonita():
     connectionobj = MySQLdb.connect(host=sqlserverip, user=sqlserveruser, passwd=sqlpass, db='liftinghands', charset='utf8', use_unicode=True, cursorclass=DictCursor)
     DBcursor = connectionobj.cursor()
