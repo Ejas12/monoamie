@@ -263,7 +263,7 @@ def asistencia():
 
 @app.route('/listabonita', methods=['GET'])
 def listabonita():
-    connectionobj = MySQLdb.connect(host=sqlserverip, user=sqlserveruser, passwd=sqlpass, db='liftinghands', charset='utf8', use_unicode=True, cursorclass=DictCursor)
+    connectionobj = MySQLdb.connect(host=sqlserverip, user=sqlserveruser, passwd=sqlpass, db='liftinghands', charset='utf8', use_unicode=True, cursorclass=MySQLdb.cursors.DictCursor)
     DBcursor = connectionobj.cursor()
     DBcursor.execute("""
     select 
