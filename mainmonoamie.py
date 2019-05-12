@@ -81,15 +81,15 @@ def reportelistas():
     connectionobj = MySQLdb.connect(host=sqlserverip, user=sqlserveruser, passwd=sqlpass, db='liftinghands', charset='utf8', use_unicode=True)
     DBcursor = connectionobj.cursor()
     DBcursor.execute("""
-    SELECT 
-    student.first_name,
-    student.last_name,
-    student.phone,
-    detallescurso.course_period_id
-    FROM liftinghands.students  student
-    join liftinghands.schedule schedule on student.student_id = schedule.student_id
-    join liftinghands.course_details detallescurso on schedule.course_id = detallescurso.course_id
-    where detallescurso.cp_title like '%q2%';
+    SELECT studenttable.first_name as 'Nombre',
+    studenttable.last_name as 'Apellido',
+    studenttable.phone as 'Telefono directo',
+    schedule.course_period_id as 'courseID',
+    course_details.cp_title  as 'cp_title'
+    from liftinghands.schedule as schedule
+    left join liftinghands.students studenttable on schedule.student_id=studenttable.student_id
+    left join liftinghands.course_details course_details on schedule.course_period_id=course_details.course_period_id
+    where schedule.marking_period_id = 16
     """)
     listaninos = DBcursor.fetchall()
     return render_template('tablelistadeclases.html', title='Reporte de alumnos para elaboracion de listas de clase', data=listaninos)
@@ -124,24 +124,21 @@ def Listaconcumples():
     connectionobj = MySQLdb.connect(host=sqlserverip, user=sqlserveruser, passwd=sqlpass, db='liftinghands', charset='utf8', use_unicode=True)
     DBcursor = connectionobj.cursor()
     DBcursor.execute("""
-SELECT liftinghands.students.first_name as 'Nombre',
-liftinghands.students.last_name as 'Apellido',
-liftinghands.students.birthdate as 'cumpleanos',
-liftinghands.students.CUSTOM_11 as 'Encargado 1',
-liftinghands.students.phone as 'Telefono directo',
-liftinghands.students.CUSTOM_12 as 'Telefono Encargado 1',
-liftinghands.enroll_grade.title as 'Grado',
-liftinghands.schedule.course_id as 'courseID'
-
-
-FROM liftinghands.students
-
-left  JOIN liftinghands.schedule ON liftinghands.schedule.student_id=liftinghands.students.student_id
-left join liftinghands.enroll_grade on liftinghands.enroll_grade.student_id=liftinghands.students.student_id
-where (liftinghands.schedule.course_id is not  null or liftinghands.schedule.course_period_id <=202) and  liftinghands.students.first_name !='Deleted'
-group by liftinghands.students.student_id
-order by liftinghands.students.student_id;
-""")
+    SELECT liftinghands.students.first_name as 'Nombre',
+    liftinghands.students.last_name as 'Apellido',
+    liftinghands.students.birthdate as 'cumpleanos',
+    liftinghands.students.CUSTOM_11 as 'Encargado 1',
+    liftinghands.students.phone as 'Telefono directo',
+    liftinghands.students.CUSTOM_12 as 'Telefono Encargado 1',
+    liftinghands.enroll_grade.title as 'Grado',
+    liftinghands.students.student_id as 'studentid'
+    FROM liftinghands.students
+    left  JOIN liftinghands.schedule ON liftinghands.schedule.student_id=liftinghands.students.student_id
+    left join liftinghands.enroll_grade on liftinghands.enroll_grade.student_id=liftinghands.students.student_id
+    where liftinghands.schedule.marking_period_id=16 and  liftinghands.students.first_name !='Deleted'
+    group by liftinghands.students.student_id
+    order by liftinghands.students.student_id;
+    """)
 
     listaninos = DBcursor.fetchall()
     return render_template('tablematriculadosconcumples.html', title='Reporte de alumnos matriculados con edades y grados', data=listaninos)
@@ -278,14 +275,16 @@ def listabonita():
     studenttable.last_name as 'Apellido',
     studenttable.CUSTOM_10 as 'Segundo_Apellido',
     studenttable.birthdate as 'Fecha_de_nacimiento',
-    studenttable.phone as 'Telefono_Directo'
+    studenttable.phone as 'Telefono_Directo',
+    studenttable.student_id as 'studentid',
+    coursedetails.cp_title
     from liftinghands.students as studenttable
     left join liftinghands.schedule schedule on studenttable.student_id=schedule.student_id
-    left join liftinghands.course_details coursedetails on schedule.course_period_id=coursedetails.course_period_id
-    where coursedetails.cp_title  like '%q2%'
-    group by studenttable.student_id;
+    left join liftinghands.course_details coursedetails on schedule.course_period_id=coursedetails.course_period_id;
     """)
     listaninos = DBcursor.fetchall()
+    studentidcount = 0
+    
     tableninos = ItemTable(listaninos)
     return render_template('dynamictable.html', title='ListaBonita', data =tableninos)
 
